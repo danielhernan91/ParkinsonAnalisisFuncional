@@ -1,0 +1,78 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Introducción}{8}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Justificación}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Objetivo General}{9}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Objetivo Específico}{9}{subsection.1.2.2}%
+\contentsline {chapter}{\numberline {2}Marco Teórico}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estado del Arte}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Variables en Investigaciones de Salud}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Variables Electrocardiográficas}{11}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Intervalo QT}{11}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Intervalo RR}{12}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Presión Arterial Sistólica y Diastólica}{12}{subsubsection.2.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.2.1.4}Puntaje de asimetría de la onda T}{13}{subsubsection.2.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.2.1.5}Intervalo $J-T_p$}{13}{subsubsection.2.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.2.1.6}Variables Clínicas}{14}{subsubsection.2.2.1.6}%
+\contentsline {section}{\numberline {2.3}Fármacos}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Dofetilida}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Quinidina}{15}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Ranolazina}{15}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Verapamilo}{16}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Naturaleza de los Datos}{16}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Estadística Bayesiana}{16}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Verosimilitud}{17}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Distribución a Priori}{17}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Distribución Posterior}{18}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Distribución Posterior Predictiva}{18}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Modelos Jerárquicos de Regresión}{19}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Inferencia Bayesiana para la estimación de parámetros}{21}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Cadenas de Markov Monte Carlo (MCMC)}{21}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Hamilton Monte Carlo}{21}{subsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.2.1}Resolución de las ecuaciones de Hamilton}{22}{subsubsection.2.7.2.1}%
+\contentsline {subsubsection}{\numberline {2.7.2.2}El integrador de Leapfrog }{23}{subsubsection.2.7.2.2}%
+\contentsline {section}{\numberline {2.8}Métricas de Evaluación}{24}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Métricas de Convergencia}{24}{subsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.8.1.1}R hat}{24}{subsubsection.2.8.1.1}%
+\contentsline {subsubsection}{\numberline {2.8.1.2}Fracción bayesiana estimada de información faltante (BFMI)}{25}{subsubsection.2.8.1.2}%
+\contentsline {subsection}{\numberline {2.8.2}Métricas de Incertidumbre}{25}{subsection.2.8.2}%
+\contentsline {subsubsection}{\numberline {2.8.2.1}Intervalos de Credibilidad}{25}{subsubsection.2.8.2.1}%
+\contentsline {subsection}{\numberline {2.8.3}Métricas de Predicción}{26}{subsection.2.8.3}%
+\contentsline {subsubsection}{\numberline {2.8.3.1}Error Cuadrático Medio}{26}{subsubsection.2.8.3.1}%
+\contentsline {subsubsection}{\numberline {2.8.3.2}Raíz del Error cuadrático Medio}{26}{subsubsection.2.8.3.2}%
+\contentsline {subsubsection}{\numberline {2.8.3.3}Error Porcentual Absoluto Medio}{26}{subsubsection.2.8.3.3}%
+\contentsline {subsubsection}{\numberline {2.8.3.4}Criterio de Información de Watanabe-Akaike}{27}{subsubsection.2.8.3.4}%
+\contentsline {subsection}{\numberline {2.8.4}Bondad de Ajuste}{27}{subsection.2.8.4}%
+\contentsline {subsubsection}{\numberline {2.8.4.1}Coeficiente de Determinación Bayesiano}{27}{subsubsection.2.8.4.1}%
+\contentsline {section}{\numberline {2.9}Implementación Computacional}{28}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}PyMC}{28}{subsection.2.9.1}%
+\contentsline {chapter}{\numberline {3}Metodología}{30}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Construcción de los Modelos Bayesianos De Regresión}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Análisis Univariado }{32}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Análisis de valores Faltantes}{32}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Medidas estadísticas}{33}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Pruebas de Bondad de Ajuste}{34}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Análisis Multivariado}{34}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Correlación De Pearson}{35}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Propuesta de Modelos }{36}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Determinación de la distribución priori }{36}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Modelo Base }{37}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Modelo base + asimetría de onda T }{39}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Modelo base + asimetría de onda T + JT }{40}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Modelo base + asimetría de onda T + JT+ dosis }{41}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Modelo base + asimetría de onda T + JT+ dosis+ presión diastólica}{42}{subsection.4.3.6}%
+\contentsline {chapter}{\numberline {5}Resultados}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Estimación de Parámetro}{43}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Modelo 1 (\ref {ec:41})}{43}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Modelo 2 (\ref {ec:42})}{45}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Modelo 3 (\ref {ec:43})}{48}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Modelo 4 (\ref {ec:44})}{50}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Modelo 5 (\ref {ec:45})}{53}{subsection.5.1.5}%
+\contentsline {section}{\numberline {5.2}Evaluación de los modelos}{55}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Modelo 1 (\ref {ec:41})}{55}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Modelo 2 (\ref {ec:42})}{57}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Modelo 3 (\ref {ec:43})}{60}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Modelo 4 (\ref {ec:44})}{63}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Modelo 5 (\ref {ec:45})}{66}{subsection.5.2.5}%
+\contentsline {section}{\numberline {5.3}Aplicativo}{70}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusiones y Recomendaciones}{71}{chapter.6}%

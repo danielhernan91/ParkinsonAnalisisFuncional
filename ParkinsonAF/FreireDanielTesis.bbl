@@ -1,0 +1,2469 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global}
+    \entry{abrilpla2023pymc}{online}{}
+      \name{author}{14}{}{%
+        {{un=0,uniquepart=base,hash=4623776fa214e8de67db5d0da48c075a}{%
+           family={Abril-Pla},
+           familyi={A\bibinithyphendelim P\bibinitperiod},
+           given={Octavio},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=116d5814efe4d7285a0c77f1fd6b43c1}{%
+           family={Andreani},
+           familyi={A\bibinitperiod},
+           given={Victoria},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eaf98fe98cc028d08a31c686bec7c105}{%
+           family={Carroll},
+           familyi={C\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dec89d2294613aec542994bfa02f7626}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Lian},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a492e1fb769281940e8b8a041189339}{%
+           family={Fonnesbeck},
+           familyi={F\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80c852d2a87b768645f58303eac9ae14}{%
+           family={Kochurov},
+           familyi={K\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dae4f0961704dd3825c933ae96784b4d}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Ravin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19906cef1fc823e3e291977d16b53535}{%
+           family={Lao},
+           familyi={L\bibinitperiod},
+           given={Junpeng},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e3b82cc0ac9ba4dae83bb87dc1a0b70}{%
+           family={Luhmann},
+           familyi={L\bibinitperiod},
+           given={Curtis\bibnamedelima C.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c6984ec87761c82242d9a0701910359e}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Osvaldo\bibnamedelima A.},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16768c40dc8c67ff115ebe5fc3405cd8}{%
+           family={Osthege},
+           familyi={O\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98b730bfd7fb0cde100c646bf01d5e5a}{%
+           family={Vieira},
+           familyi={V\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae8393dab3f4942bdad030802791b6f0}{%
+           family={Wiecki},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11b17056b3457e04579dd3ffa5692503}{%
+           family={Zinkov},
+           familyi={Z\bibinitperiod},
+           given={Radford},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{482a91540506bf99c4eccabfd08b5445}
+      \strng{fullhash}{e1f6f79030556b027a4e0af64c2ebdb9}
+      \strng{bibnamehash}{e1f6f79030556b027a4e0af64c2ebdb9}
+      \strng{authorbibnamehash}{e1f6f79030556b027a4e0af64c2ebdb9}
+      \strng{authornamehash}{482a91540506bf99c4eccabfd08b5445}
+      \strng{authorfullhash}{e1f6f79030556b027a4e0af64c2ebdb9}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Preprint en arXiv}
+      \field{title}{PyMC: A modern, and comprehensive probabilistic programming framework in Python}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2302.03256
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2302.03256
+      \endverb
+    \endentry
+    \entry{baczko2020transgenic}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b401341ef467259624d5cc742346195c}{%
+           family={Baczkó},
+           familyi={B\bibinitperiod},
+           given={István},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7531baaa9e930aa460041c5d09acb187}{%
+           family={Hornyik},
+           familyi={H\bibinitperiod},
+           given={Tibor},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17ed40e68a9030401575fbb50e5349ee}{%
+           family={Brunner},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8213afe60a337ec17fc8b3e06ded4087}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Gideon},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b66c687321b5e9422884062f860ac6fa}{%
+           family={Odening},
+           familyi={O\bibinitperiod},
+           given={Katja\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5715e1747592b24cfbeb87fa9374ca34}
+      \strng{fullhash}{0e3bf217ac3820c45f678cc0f08cd350}
+      \strng{bibnamehash}{0e3bf217ac3820c45f678cc0f08cd350}
+      \strng{authorbibnamehash}{0e3bf217ac3820c45f678cc0f08cd350}
+      \strng{authornamehash}{5715e1747592b24cfbeb87fa9374ca34}
+      \strng{authorfullhash}{0e3bf217ac3820c45f678cc0f08cd350}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pharmaceuticals}
+      \field{number}{6}
+      \field{title}{Transgenic rabbit models in proarrhythmia research}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{pages}{118}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ph13060118
+      \endverb
+    \endentry
+    \entry{betancourt2017conceptual}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1982fa604a3f94837efceaa53330b2a4}{%
+           family={Betancourt},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1982fa604a3f94837efceaa53330b2a4}
+      \strng{fullhash}{1982fa604a3f94837efceaa53330b2a4}
+      \strng{bibnamehash}{1982fa604a3f94837efceaa53330b2a4}
+      \strng{authorbibnamehash}{1982fa604a3f94837efceaa53330b2a4}
+      \strng{authornamehash}{1982fa604a3f94837efceaa53330b2a4}
+      \strng{authorfullhash}{1982fa604a3f94837efceaa53330b2a4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Blog de Statistical Modeling, Columbia University}
+      \field{title}{A conceptual introduction to Hamiltonian Monte Carlo}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://statmodeling.stat.columbia.edu/2017/01/12/conceptual-introduction-hamiltonian-monte-carlo/
+      \endverb
+      \verb{url}
+      \verb https://statmodeling.stat.columbia.edu/2017/01/12/conceptual-introduction-hamiltonian-monte-carlo/
+      \endverb
+    \endentry
+    \entry{betancourt2015hmc}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1982fa604a3f94837efceaa53330b2a4}{%
+           family={Betancourt},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29d5a93ca5a81c990256c62b097f65bb}{%
+           family={Girolami},
+           familyi={G\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=939b01cc043f78e8e6dcf18d2a2f1410}{%
+           family={Upadhyay},
+           familyi={U\bibinitperiod},
+           given={Sujit\bibnamedelima K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Chapman}%
+        {Hall/CRC}%
+      }
+      \strng{namehash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{fullhash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{bibnamehash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{authorbibnamehash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{authornamehash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{authorfullhash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{editorbibnamehash}{939b01cc043f78e8e6dcf18d2a2f1410}
+      \strng{editornamehash}{939b01cc043f78e8e6dcf18d2a2f1410}
+      \strng{editorfullhash}{939b01cc043f78e8e6dcf18d2a2f1410}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Current trends in Bayesian methodology with applications}
+      \field{title}{Hamiltonian Monte Carlo for hierarchical models}
+      \field{year}{2015}
+      \field{pages}{79\bibrangedash 101}
+      \range{pages}{23}
+    \endentry
+    \entry{Britton2017}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=0dc4b0c0c531d01254ff41c94b2c24c8}{%
+           family={Britton},
+           familyi={B\bibinitperiod},
+           given={O.\bibnamedelimi J.},
+           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee4401319d2d4a26e34a3749bb4bf799}{%
+           family={Abi-Gerges},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faaab741491873fd5850f5d4cf427209}{%
+           family={Page},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40990fb41dccc812f7dc6e77f80bb2b9}{%
+           family={Ghetti},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ca3eadda1591888a09e111ee09483ef}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={P.\bibnamedelimi E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ffa1e8a261e91aad15211965cd802b8}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{043727224d9f95966cb78c3ca5e06d0e}
+      \strng{fullhash}{4eab6969de9ce7aee502785d3809e75f}
+      \strng{bibnamehash}{4eab6969de9ce7aee502785d3809e75f}
+      \strng{authorbibnamehash}{4eab6969de9ce7aee502785d3809e75f}
+      \strng{authornamehash}{043727224d9f95966cb78c3ca5e06d0e}
+      \strng{authorfullhash}{4eab6969de9ce7aee502785d3809e75f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Physiology}
+      \field{title}{Quantitative comparison of cell- and tissue-based in vitro assays for predicting drug-induced arrhythmia risk}
+      \field{volume}{8}
+      \field{year}{2017}
+      \field{pages}{597}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fphys.2017.00597
+      \endverb
+    \endentry
+    \entry{brooks2011mcmc}{book}{}
+      \name{editor}{4}{}{%
+        {{un=0,uniquepart=base,hash=44e6b85e4b24ea984e58302c151818d6}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91338e619ca9474a380864619a3b98a1}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Galin},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85ea5d8c6fc2be6b9cae229fdff73961}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Xiao-Li},
+           giveni={X\bibinithyphendelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{eb4b2cd91ad78135015c11642dac3ba9}
+      \strng{fullhash}{dab40d7760b6559dd9d433c60f154f16}
+      \strng{bibnamehash}{dab40d7760b6559dd9d433c60f154f16}
+      \strng{editorbibnamehash}{dab40d7760b6559dd9d433c60f154f16}
+      \strng{editornamehash}{eb4b2cd91ad78135015c11642dac3ba9}
+      \strng{editorfullhash}{dab40d7760b6559dd9d433c60f154f16}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbook of Markov chain Monte Carlo}
+      \field{year}{2011}
+    \endentry
+    \entry{castrojimenez2009variables}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=34f579df07957cae1c2c778311b7eb48}{%
+           family={Castro-Jiménez},
+           familyi={C\bibinithyphendelim J\bibinitperiod},
+           given={M.\bibnamedelimi Á.},
+           giveni={M\bibinitperiod\bibinitdelim Á\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab1e5741793f11837da3bcfd876fe06e}{%
+           family={Díaz-Martínez},
+           familyi={D\bibinithyphendelim M\bibinitperiod},
+           given={L.\bibnamedelimi A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4f1669aa03ee628e56a73e7db09eff51}
+      \strng{fullhash}{4f1669aa03ee628e56a73e7db09eff51}
+      \strng{bibnamehash}{4f1669aa03ee628e56a73e7db09eff51}
+      \strng{authorbibnamehash}{4f1669aa03ee628e56a73e7db09eff51}
+      \strng{authornamehash}{4f1669aa03ee628e56a73e7db09eff51}
+      \strng{authorfullhash}{4f1669aa03ee628e56a73e7db09eff51}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MedUNAB}
+      \field{number}{3}
+      \field{title}{Las variables en el proceso de investigación en salud: Importancia, clasificación y forma de presentación en protocolos de investigación}
+      \field{volume}{12}
+      \field{year}{2009}
+      \field{pages}{151\bibrangedash 156}
+      \range{pages}{6}
+    \endentry
+    \entry{chen2010bayesian}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f12458352bf48d8ebe2ba46b11310c19}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61a5f11b3a300a191d13bd823c06cf4c}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \strng{fullhash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \strng{bibnamehash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \strng{authorbibnamehash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \strng{authornamehash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \strng{authorfullhash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biopharmaceutical Statistics}
+      \field{number}{3}
+      \field{title}{A Bayesian measurement error approach to QT interval correction and prolongation}
+      \field{volume}{20}
+      \field{year}{2010}
+      \field{pages}{523\bibrangedash 542}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1080/10543400903581960
+      \endverb
+    \endentry
+    \entry{Duffull2011}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2e435076b71aa52170fc56073bccf838}{%
+           family={Duffull},
+           familyi={D\bibinitperiod},
+           given={S.\bibnamedelimi B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2d0b599c6fa37b8dbefe972cea691cf}{%
+           family={Gulati},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7df322984d2bcbeed24e1d9039891cf}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={D.\bibnamedelimi F.\bibnamedelimi B.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9e0bbcdac14f8a061452d633ecb870ec}
+      \strng{fullhash}{b8676e65747eea73885252c91ef966aa}
+      \strng{bibnamehash}{b8676e65747eea73885252c91ef966aa}
+      \strng{authorbibnamehash}{b8676e65747eea73885252c91ef966aa}
+      \strng{authornamehash}{9e0bbcdac14f8a061452d633ecb870ec}
+      \strng{authorfullhash}{b8676e65747eea73885252c91ef966aa}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Clinical Pharmacokinetics}
+      \field{number}{2}
+      \field{title}{Bayesian pharmacokinetic modelling}
+      \field{volume}{50}
+      \field{year}{2011}
+      \field{pages}{75\bibrangedash 88}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.2165/11538380-000000000-00000
+      \endverb
+    \endentry
+    \entry{fahie2023verapamil}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=00d260b341c238996f8a03a581fe86bd}{%
+           family={Fahie},
+           familyi={F\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d73c6781dfaade12f223275390b432c0}{%
+           family={Cassagnol},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1647647e4a232757f06fbc3c80863d5d}
+      \strng{fullhash}{1647647e4a232757f06fbc3c80863d5d}
+      \strng{bibnamehash}{1647647e4a232757f06fbc3c80863d5d}
+      \strng{authorbibnamehash}{1647647e4a232757f06fbc3c80863d5d}
+      \strng{authornamehash}{1647647e4a232757f06fbc3c80863d5d}
+      \strng{authorfullhash}{1647647e4a232757f06fbc3c80863d5d}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing}
+      \field{note}{Updated 2023 Feb 6; StatPearls Publishing; 2025 Jan--. PMID: 30860730}
+      \field{title}{Verapamil}
+      \field{year}{2023}
+    \endentry
+    \entry{gelman2017conceptualhmc}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \strng{fullhash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \strng{bibnamehash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \strng{authorbibnamehash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \strng{authornamehash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \strng{authorfullhash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Conceptual Introduction to Hamiltonian Monte Carlo}
+      \field{urlday}{25}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://statmodeling.stat.columbia.edu/2017/01/12/conceptual-introduction-hamiltonian-monte-carlo/
+      \endverb
+      \verb{url}
+      \verb https://statmodeling.stat.columbia.edu/2017/01/12/conceptual-introduction-hamiltonian-monte-carlo/
+      \endverb
+    \endentry
+    \entry{gelman2013predictive}{online}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=57f3f25f58a60f557d446fcf3a27d81b}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={Jessica},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d36e97683cbc9d6ef06fc2ec40becb0}{%
+           family={Vehtari},
+           familyi={V\bibinitperiod},
+           given={Aki},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{fullhash}{8a6f2f44ae711dce375815d0a15266f1}
+      \strng{bibnamehash}{8a6f2f44ae711dce375815d0a15266f1}
+      \strng{authorbibnamehash}{8a6f2f44ae711dce375815d0a15266f1}
+      \strng{authornamehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{authorfullhash}{8a6f2f44ae711dce375815d0a15266f1}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Preprint en arXiv}
+      \field{title}{Understanding predictive information criteria for Bayesian models}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1307.5928
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1307.5928
+      \endverb
+    \endentry
+    \entry{gelman2018rsquared}{unpublished}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9cc812cde8c441e79dfaab4955a72c2c}{%
+           family={Goodrich},
+           familyi={G\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d22d0f2897624075bcba3f2195a96094}{%
+           family={Gabry},
+           familyi={G\bibinitperiod},
+           given={Jonah},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d36e97683cbc9d6ef06fc2ec40becb0}{%
+           family={Vehtari},
+           familyi={V\bibinitperiod},
+           given={Aki},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{fullhash}{eaef5d64f4cab934c3c2aaa55cedd228}
+      \strng{bibnamehash}{eaef5d64f4cab934c3c2aaa55cedd228}
+      \strng{authorbibnamehash}{eaef5d64f4cab934c3c2aaa55cedd228}
+      \strng{authornamehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{authorfullhash}{eaef5d64f4cab934c3c2aaa55cedd228}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{Manuscrito no publicado}
+      \field{title}{R-squared for Bayesian regression models}
+      \field{year}{2018}
+    \endentry
+    \entry{gelman2025bayesian}{book}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f088783ee75f9f0908eeb4fa9571a31}{%
+           family={Carlin},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd9cbf9e3046ffa6a7cecf24e1a46b03}{%
+           family={Stern},
+           familyi={S\bibinitperiod},
+           given={Hal\bibnamedelima S.},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84545b54e408a7eba6bf9280fd2eaae7}{%
+           family={Dunson},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d36e97683cbc9d6ef06fc2ec40becb0}{%
+           family={Vehtari},
+           familyi={V\bibinitperiod},
+           given={Aki},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49a367b6280de8a239f8bbdd573f996f}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={Donald\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Chapman \& Hall/CRC}%
+      }
+      \strng{namehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{fullhash}{5c09c13430845c0df008aa82cfeb78ef}
+      \strng{bibnamehash}{5c09c13430845c0df008aa82cfeb78ef}
+      \strng{authorbibnamehash}{5c09c13430845c0df008aa82cfeb78ef}
+      \strng{authornamehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{authorfullhash}{5c09c13430845c0df008aa82cfeb78ef}
+      \field{extraname}{3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Bayesian data analysis}
+      \field{year}{2025}
+    \endentry
+    \entry{gramhansen2019hmc}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a66d16fe647a09bebfa13132ad097415}{%
+           family={Gram-Hansen},
+           familyi={G\bibinithyphendelim H\bibinitperiod},
+           given={Bradley},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a66d16fe647a09bebfa13132ad097415}
+      \strng{fullhash}{a66d16fe647a09bebfa13132ad097415}
+      \strng{bibnamehash}{a66d16fe647a09bebfa13132ad097415}
+      \strng{authorbibnamehash}{a66d16fe647a09bebfa13132ad097415}
+      \strng{authornamehash}{a66d16fe647a09bebfa13132ad097415}
+      \strng{authorfullhash}{a66d16fe647a09bebfa13132ad097415}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The beginners guide to Hamiltonian Monte Carlo}
+      \field{urlday}{25}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://bayesianbrad.github.io/posts/2019_hmc.html
+      \endverb
+      \verb{url}
+      \verb https://bayesianbrad.github.io/posts/2019_hmc.html
+      \endverb
+    \endentry
+    \entry{hoff2009first}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4f65d919a92f4c4afcabd6cad3be75ae}{%
+           family={Hoff},
+           familyi={H\bibinitperiod},
+           given={Peter\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \strng{fullhash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \strng{bibnamehash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \strng{authorbibnamehash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \strng{authornamehash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \strng{authorfullhash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A first course in Bayesian statistical methods}
+      \field{year}{2009}
+    \endentry
+    \entry{jain2023quinidine}{online}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2de151a1ac0a17aa53428d3dfd3df296}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Ankit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ec48e2e1a828578aa54f28218ede5ef}{%
+           family={Sisodia},
+           familyi={S\bibinitperiod},
+           given={Jyoti},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d521deb8777bf2d7b030dd05511fedc8}
+      \strng{fullhash}{d521deb8777bf2d7b030dd05511fedc8}
+      \strng{bibnamehash}{d521deb8777bf2d7b030dd05511fedc8}
+      \strng{authorbibnamehash}{d521deb8777bf2d7b030dd05511fedc8}
+      \strng{authornamehash}{d521deb8777bf2d7b030dd05511fedc8}
+      \strng{authorfullhash}{d521deb8777bf2d7b030dd05511fedc8}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{En StatPearls. StatPearls Publishing}
+      \field{title}{Quinidine}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/books/NBK542193/
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/books/NBK542193/
+      \endverb
+    \endentry
+    \entry{january2000early}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9bd16b65d1469d082e37a3c116bca187}{%
+           family={January},
+           familyi={J\bibinitperiod},
+           given={Craig\bibnamedelima T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f85ecf599abc19392532181bdc4e474b}{%
+           family={Riddle},
+           familyi={R\bibinitperiod},
+           given={John\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{54302c4706efbbf0a419bc74433e4e3c}
+      \strng{fullhash}{54302c4706efbbf0a419bc74433e4e3c}
+      \strng{bibnamehash}{54302c4706efbbf0a419bc74433e4e3c}
+      \strng{authorbibnamehash}{54302c4706efbbf0a419bc74433e4e3c}
+      \strng{authornamehash}{54302c4706efbbf0a419bc74433e4e3c}
+      \strng{authorfullhash}{54302c4706efbbf0a419bc74433e4e3c}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Circulation}
+      \field{number}{21}
+      \field{title}{Early afterdepolarizations: Mechanism of induction and block}
+      \field{volume}{102}
+      \field{year}{2000}
+      \field{pages}{2665\bibrangedash 2669}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1161/01.CIR.102.21.2665
+      \endverb
+    \endentry
+    \entry{khan2006blood}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5b470f24298ff88707c2aa2971cebcd8}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{5b470f24298ff88707c2aa2971cebcd8}
+      \strng{fullhash}{5b470f24298ff88707c2aa2971cebcd8}
+      \strng{bibnamehash}{5b470f24298ff88707c2aa2971cebcd8}
+      \strng{authorbibnamehash}{5b470f24298ff88707c2aa2971cebcd8}
+      \strng{authornamehash}{5b470f24298ff88707c2aa2971cebcd8}
+      \strng{authorfullhash}{5b470f24298ff88707c2aa2971cebcd8}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Encyclopedia of heart diseases}
+      \field{title}{Blood pressure}
+      \field{year}{2006}
+      \field{pages}{175\bibrangedash 181}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/B978-012373884-4.00028-1
+      \endverb
+    \endentry
+    \entry{martin2021bayesian}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c6984ec87761c82242d9a0701910359e}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Osvaldo\bibnamedelima A.},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dae4f0961704dd3825c933ae96784b4d}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Ravin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19906cef1fc823e3e291977d16b53535}{%
+           family={Lao},
+           familyi={L\bibinitperiod},
+           given={Junpeng},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{d74748f100ea1d40c7951016563d9e81}
+      \strng{fullhash}{d86b731034b15bf41bab9088f69f29db}
+      \strng{bibnamehash}{d86b731034b15bf41bab9088f69f29db}
+      \strng{authorbibnamehash}{d86b731034b15bf41bab9088f69f29db}
+      \strng{authornamehash}{d74748f100ea1d40c7951016563d9e81}
+      \strng{authorfullhash}{d86b731034b15bf41bab9088f69f29db}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bayesian modeling and computation in Python}
+      \field{year}{2021}
+    \endentry
+    \entry{mcelreath2020statrethinking}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=51204ab1ac6fd3aa8b649ff12ae89bf1}{%
+           family={McElreath},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{fullhash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{bibnamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authorbibnamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authornamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authorfullhash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical rethinking: A Bayesian course with examples in R and Stan}
+      \field{year}{2020}
+    \endentry
+    \entry{monroe_qt}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff7349c022a423b427cedb17db9a40ea}{%
+           family={{Monroe Community College}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff7349c022a423b427cedb17db9a40ea}
+      \strng{fullhash}{ff7349c022a423b427cedb17db9a40ea}
+      \strng{bibnamehash}{ff7349c022a423b427cedb17db9a40ea}
+      \strng{authorbibnamehash}{ff7349c022a423b427cedb17db9a40ea}
+      \strng{authornamehash}{ff7349c022a423b427cedb17db9a40ea}
+      \strng{authorfullhash}{ff7349c022a423b427cedb17db9a40ea}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Recuperado el 30 de abril de 2025}
+      \field{title}{Understanding the QT/QTc measurement}
+      \field{year}{n.d.}
+      \verb{urlraw}
+      \verb https://www.monroecc.edu/depts/pstc/ems/paramedic/paramedic-training-at-mcc/degree-program-content/cardiology/understanding-the-qtqtc-measurement/
+      \endverb
+      \verb{url}
+      \verb https://www.monroecc.edu/depts/pstc/ems/paramedic/paramedic-training-at-mcc/degree-program-content/cardiology/understanding-the-qtqtc-measurement/
+      \endverb
+    \endentry
+    \entry{pfizer1999tikosyn}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=99ba5af2f2853f16ecf17eea27797e81}{%
+           family={{Pfizer Labs}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{99ba5af2f2853f16ecf17eea27797e81}
+      \strng{fullhash}{99ba5af2f2853f16ecf17eea27797e81}
+      \strng{bibnamehash}{99ba5af2f2853f16ecf17eea27797e81}
+      \strng{authorbibnamehash}{99ba5af2f2853f16ecf17eea27797e81}
+      \strng{authornamehash}{99ba5af2f2853f16ecf17eea27797e81}
+      \strng{authorfullhash}{99ba5af2f2853f16ecf17eea27797e81}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Material de prescripción del fabricante}
+      \field{title}{Tikosyn (dofetilide) package insert}
+      \field{year}{1999}
+    \endentry
+    \entry{rang2023cardio}{online}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9c0a56d1a57b88ed6245ca2a777da2db}{%
+           family={Rang},
+           familyi={R\bibinitperiod},
+           given={Humphrey\bibnamedelima P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dea3b03b910636f0aab0633817be78e6}{%
+           family={Stringer},
+           familyi={S\bibinitperiod},
+           given={Janet\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \strng{fullhash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \strng{bibnamehash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \strng{authorbibnamehash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \strng{authornamehash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \strng{authorfullhash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{month}{3}
+      \field{note}{Encyclopædia Britannica}
+      \field{title}{Cardiovascular drug}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.britannica.com/science/cardiovascular-drug
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/science/cardiovascular-drug
+      \endverb
+    \endentry
+    \entry{raynerhartley2016ranolazina}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e06c8bc24e770ecbb7ab0670724e6793}{%
+           family={Rayner-Hartley},
+           familyi={R\bibinithyphendelim H\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbccdc9fc9d2ee2d8a83c778fb528c28}{%
+           family={Sedlak},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5c97daf3765c229e1649ba9b971f60a7}
+      \strng{fullhash}{5c97daf3765c229e1649ba9b971f60a7}
+      \strng{bibnamehash}{5c97daf3765c229e1649ba9b971f60a7}
+      \strng{authorbibnamehash}{5c97daf3765c229e1649ba9b971f60a7}
+      \strng{authornamehash}{5c97daf3765c229e1649ba9b971f60a7}
+      \strng{authorfullhash}{5c97daf3765c229e1649ba9b971f60a7}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Manuscrito no publicado}
+      \field{title}{Revisión del uso de ranolazina en el tratamiento de la angina y otras condiciones cardíacas}
+      \field{year}{2016}
+    \endentry
+    \entry{salvatier2016pymc3}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05c761e203cc6c586605836fa4676d10}{%
+           family={Salvatier},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50f495e80088cea41d5ff3a042dfb728}{%
+           family={Wiecki},
+           familyi={W\bibinitperiod},
+           given={Thomas\bibnamedelima V.},
+           giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9524daf70c4a2e189d4efb9eb659bb8e}{%
+           family={Fonnesbeck},
+           familyi={F\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{abfae452a57f1beb54edb571049fb0a2}
+      \strng{fullhash}{84d195951c6ec056c0d274af93148826}
+      \strng{bibnamehash}{84d195951c6ec056c0d274af93148826}
+      \strng{authorbibnamehash}{84d195951c6ec056c0d274af93148826}
+      \strng{authornamehash}{abfae452a57f1beb54edb571049fb0a2}
+      \strng{authorfullhash}{84d195951c6ec056c0d274af93148826}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PeerJ Computer Science}
+      \field{title}{Probabilistic programming in Python using PyMC3}
+      \field{volume}{2}
+      \field{year}{2016}
+      \field{pages}{e55}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.7717/peerj-cs.55
+      \endverb
+    \endentry
+    \entry{vanravenzwaaij2018mcmc}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=58c29f2fe9a7c86b8eaece07fc748e17}{%
+           family={Ravenzwaaij},
+           familyi={R\bibinitperiod},
+           given={Don},
+           giveni={D\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=3c64d1e2926a9c376708de2e97857bd0}{%
+           family={Cassey},
+           familyi={C\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c45a8eeded8ac3f0346f06537d9a683}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Scott\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3a574c810e69b1a171565a9cb9bd07b4}
+      \strng{fullhash}{2790b1b691505b02acad6b613ab3e887}
+      \strng{bibnamehash}{2790b1b691505b02acad6b613ab3e887}
+      \strng{authorbibnamehash}{2790b1b691505b02acad6b613ab3e887}
+      \strng{authornamehash}{3a574c810e69b1a171565a9cb9bd07b4}
+      \strng{authorfullhash}{2790b1b691505b02acad6b613ab3e887}
+      \field{sortinit}{v}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychonomic Bulletin \& Review}
+      \field{number}{1}
+      \field{title}{A simple introduction to Markov Chain Monte-Carlo sampling}
+      \field{volume}{25}
+      \field{year}{2018}
+      \field{pages}{143\bibrangedash 154}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.3758/s13423-016-1015-8
+      \endverb
+    \endentry
+    \entry{vicente2015comprehensive}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=5d4e244a5065e57049d9407bfb1be9d3}{%
+           family={Vicente},
+           familyi={V\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae303367702899bb55cf593ae5c49057}{%
+           family={Johannesen},
+           familyi={J\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fefa10c7b13053958861b1704cd476df}{%
+           family={Mason},
+           familyi={M\bibinitperiod},
+           given={Jay\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1fa07d398e56b03ec280db01b70bf75e}{%
+           family={Crumb},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelima J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efaef66a32104895fc5a4a55af16ec74}{%
+           family={Pueyo},
+           familyi={P\bibinitperiod},
+           given={Esther},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce6e7791a9e88089366e8309df9577eb}{%
+           family={Stockbridge},
+           familyi={S\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d3de4a6e5f77d6254ea630328d4277d}{%
+           family={Strauss},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d7328d5cbbe034b724072255fb58ad5b}
+      \strng{fullhash}{8955848982dbc9142556f014ac523137}
+      \strng{bibnamehash}{8955848982dbc9142556f014ac523137}
+      \strng{authorbibnamehash}{8955848982dbc9142556f014ac523137}
+      \strng{authornamehash}{d7328d5cbbe034b724072255fb58ad5b}
+      \strng{authorfullhash}{8955848982dbc9142556f014ac523137}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Heart Association}
+      \field{number}{4}
+      \field{title}{Comprehensive T wave morphology assessment in a randomized clinical study of dofetilide, quinidine, ranolazine, and verapamil}
+      \field{volume}{4}
+      \field{year}{2015}
+      \field{pages}{e001615}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1161/JAHA.114.001615
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global}
+    \entry{abrilpla2023pymc}{online}{}
+      \name{author}{14}{}{%
+        {{un=0,uniquepart=base,hash=4623776fa214e8de67db5d0da48c075a}{%
+           family={Abril-Pla},
+           familyi={A\bibinithyphendelim P\bibinitperiod},
+           given={Octavio},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=116d5814efe4d7285a0c77f1fd6b43c1}{%
+           family={Andreani},
+           familyi={A\bibinitperiod},
+           given={Victoria},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eaf98fe98cc028d08a31c686bec7c105}{%
+           family={Carroll},
+           familyi={C\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dec89d2294613aec542994bfa02f7626}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Lian},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a492e1fb769281940e8b8a041189339}{%
+           family={Fonnesbeck},
+           familyi={F\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80c852d2a87b768645f58303eac9ae14}{%
+           family={Kochurov},
+           familyi={K\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dae4f0961704dd3825c933ae96784b4d}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Ravin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19906cef1fc823e3e291977d16b53535}{%
+           family={Lao},
+           familyi={L\bibinitperiod},
+           given={Junpeng},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e3b82cc0ac9ba4dae83bb87dc1a0b70}{%
+           family={Luhmann},
+           familyi={L\bibinitperiod},
+           given={Curtis\bibnamedelima C.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c6984ec87761c82242d9a0701910359e}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Osvaldo\bibnamedelima A.},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16768c40dc8c67ff115ebe5fc3405cd8}{%
+           family={Osthege},
+           familyi={O\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98b730bfd7fb0cde100c646bf01d5e5a}{%
+           family={Vieira},
+           familyi={V\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae8393dab3f4942bdad030802791b6f0}{%
+           family={Wiecki},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11b17056b3457e04579dd3ffa5692503}{%
+           family={Zinkov},
+           familyi={Z\bibinitperiod},
+           given={Radford},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{482a91540506bf99c4eccabfd08b5445}
+      \strng{fullhash}{e1f6f79030556b027a4e0af64c2ebdb9}
+      \strng{bibnamehash}{e1f6f79030556b027a4e0af64c2ebdb9}
+      \strng{authorbibnamehash}{e1f6f79030556b027a4e0af64c2ebdb9}
+      \strng{authornamehash}{482a91540506bf99c4eccabfd08b5445}
+      \strng{authorfullhash}{e1f6f79030556b027a4e0af64c2ebdb9}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Preprint en arXiv}
+      \field{title}{PyMC: A modern, and comprehensive probabilistic programming framework in Python}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2302.03256
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2302.03256
+      \endverb
+    \endentry
+    \entry{baczko2020transgenic}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b401341ef467259624d5cc742346195c}{%
+           family={Baczkó},
+           familyi={B\bibinitperiod},
+           given={István},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7531baaa9e930aa460041c5d09acb187}{%
+           family={Hornyik},
+           familyi={H\bibinitperiod},
+           given={Tibor},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17ed40e68a9030401575fbb50e5349ee}{%
+           family={Brunner},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8213afe60a337ec17fc8b3e06ded4087}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Gideon},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b66c687321b5e9422884062f860ac6fa}{%
+           family={Odening},
+           familyi={O\bibinitperiod},
+           given={Katja\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5715e1747592b24cfbeb87fa9374ca34}
+      \strng{fullhash}{0e3bf217ac3820c45f678cc0f08cd350}
+      \strng{bibnamehash}{0e3bf217ac3820c45f678cc0f08cd350}
+      \strng{authorbibnamehash}{0e3bf217ac3820c45f678cc0f08cd350}
+      \strng{authornamehash}{5715e1747592b24cfbeb87fa9374ca34}
+      \strng{authorfullhash}{0e3bf217ac3820c45f678cc0f08cd350}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pharmaceuticals}
+      \field{number}{6}
+      \field{title}{Transgenic rabbit models in proarrhythmia research}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{pages}{118}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ph13060118
+      \endverb
+    \endentry
+    \entry{betancourt2017conceptual}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1982fa604a3f94837efceaa53330b2a4}{%
+           family={Betancourt},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1982fa604a3f94837efceaa53330b2a4}
+      \strng{fullhash}{1982fa604a3f94837efceaa53330b2a4}
+      \strng{bibnamehash}{1982fa604a3f94837efceaa53330b2a4}
+      \strng{authorbibnamehash}{1982fa604a3f94837efceaa53330b2a4}
+      \strng{authornamehash}{1982fa604a3f94837efceaa53330b2a4}
+      \strng{authorfullhash}{1982fa604a3f94837efceaa53330b2a4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Blog de Statistical Modeling, Columbia University}
+      \field{title}{A conceptual introduction to Hamiltonian Monte Carlo}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://statmodeling.stat.columbia.edu/2017/01/12/conceptual-introduction-hamiltonian-monte-carlo/
+      \endverb
+      \verb{url}
+      \verb https://statmodeling.stat.columbia.edu/2017/01/12/conceptual-introduction-hamiltonian-monte-carlo/
+      \endverb
+    \endentry
+    \entry{betancourt2015hmc}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1982fa604a3f94837efceaa53330b2a4}{%
+           family={Betancourt},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29d5a93ca5a81c990256c62b097f65bb}{%
+           family={Girolami},
+           familyi={G\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=939b01cc043f78e8e6dcf18d2a2f1410}{%
+           family={Upadhyay},
+           familyi={U\bibinitperiod},
+           given={Sujit\bibnamedelima K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Chapman}%
+        {Hall/CRC}%
+      }
+      \strng{namehash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{fullhash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{bibnamehash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{authorbibnamehash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{authornamehash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{authorfullhash}{08c11c69ce667fba38f3a90f68654947}
+      \strng{editorbibnamehash}{939b01cc043f78e8e6dcf18d2a2f1410}
+      \strng{editornamehash}{939b01cc043f78e8e6dcf18d2a2f1410}
+      \strng{editorfullhash}{939b01cc043f78e8e6dcf18d2a2f1410}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Current trends in Bayesian methodology with applications}
+      \field{title}{Hamiltonian Monte Carlo for hierarchical models}
+      \field{year}{2015}
+      \field{pages}{79\bibrangedash 101}
+      \range{pages}{23}
+    \endentry
+    \entry{Britton2017}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=0dc4b0c0c531d01254ff41c94b2c24c8}{%
+           family={Britton},
+           familyi={B\bibinitperiod},
+           given={O.\bibnamedelimi J.},
+           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee4401319d2d4a26e34a3749bb4bf799}{%
+           family={Abi-Gerges},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faaab741491873fd5850f5d4cf427209}{%
+           family={Page},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40990fb41dccc812f7dc6e77f80bb2b9}{%
+           family={Ghetti},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ca3eadda1591888a09e111ee09483ef}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={P.\bibnamedelimi E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ffa1e8a261e91aad15211965cd802b8}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{043727224d9f95966cb78c3ca5e06d0e}
+      \strng{fullhash}{4eab6969de9ce7aee502785d3809e75f}
+      \strng{bibnamehash}{4eab6969de9ce7aee502785d3809e75f}
+      \strng{authorbibnamehash}{4eab6969de9ce7aee502785d3809e75f}
+      \strng{authornamehash}{043727224d9f95966cb78c3ca5e06d0e}
+      \strng{authorfullhash}{4eab6969de9ce7aee502785d3809e75f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Physiology}
+      \field{title}{Quantitative comparison of cell- and tissue-based in vitro assays for predicting drug-induced arrhythmia risk}
+      \field{volume}{8}
+      \field{year}{2017}
+      \field{pages}{597}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fphys.2017.00597
+      \endverb
+    \endentry
+    \entry{brooks2011mcmc}{book}{}
+      \name{editor}{4}{}{%
+        {{un=0,uniquepart=base,hash=44e6b85e4b24ea984e58302c151818d6}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91338e619ca9474a380864619a3b98a1}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Galin},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85ea5d8c6fc2be6b9cae229fdff73961}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Xiao-Li},
+           giveni={X\bibinithyphendelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{eb4b2cd91ad78135015c11642dac3ba9}
+      \strng{fullhash}{dab40d7760b6559dd9d433c60f154f16}
+      \strng{bibnamehash}{dab40d7760b6559dd9d433c60f154f16}
+      \strng{editorbibnamehash}{dab40d7760b6559dd9d433c60f154f16}
+      \strng{editornamehash}{eb4b2cd91ad78135015c11642dac3ba9}
+      \strng{editorfullhash}{dab40d7760b6559dd9d433c60f154f16}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbook of Markov chain Monte Carlo}
+      \field{year}{2011}
+    \endentry
+    \entry{castrojimenez2009variables}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=34f579df07957cae1c2c778311b7eb48}{%
+           family={Castro-Jiménez},
+           familyi={C\bibinithyphendelim J\bibinitperiod},
+           given={M.\bibnamedelimi Á.},
+           giveni={M\bibinitperiod\bibinitdelim Á\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab1e5741793f11837da3bcfd876fe06e}{%
+           family={Díaz-Martínez},
+           familyi={D\bibinithyphendelim M\bibinitperiod},
+           given={L.\bibnamedelimi A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4f1669aa03ee628e56a73e7db09eff51}
+      \strng{fullhash}{4f1669aa03ee628e56a73e7db09eff51}
+      \strng{bibnamehash}{4f1669aa03ee628e56a73e7db09eff51}
+      \strng{authorbibnamehash}{4f1669aa03ee628e56a73e7db09eff51}
+      \strng{authornamehash}{4f1669aa03ee628e56a73e7db09eff51}
+      \strng{authorfullhash}{4f1669aa03ee628e56a73e7db09eff51}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MedUNAB}
+      \field{number}{3}
+      \field{title}{Las variables en el proceso de investigación en salud: Importancia, clasificación y forma de presentación en protocolos de investigación}
+      \field{volume}{12}
+      \field{year}{2009}
+      \field{pages}{151\bibrangedash 156}
+      \range{pages}{6}
+    \endentry
+    \entry{chen2010bayesian}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f12458352bf48d8ebe2ba46b11310c19}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61a5f11b3a300a191d13bd823c06cf4c}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \strng{fullhash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \strng{bibnamehash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \strng{authorbibnamehash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \strng{authornamehash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \strng{authorfullhash}{af44ce43137f86c1eb6d5d071bbc61f6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biopharmaceutical Statistics}
+      \field{number}{3}
+      \field{title}{A Bayesian measurement error approach to QT interval correction and prolongation}
+      \field{volume}{20}
+      \field{year}{2010}
+      \field{pages}{523\bibrangedash 542}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1080/10543400903581960
+      \endverb
+    \endentry
+    \entry{Duffull2011}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2e435076b71aa52170fc56073bccf838}{%
+           family={Duffull},
+           familyi={D\bibinitperiod},
+           given={S.\bibnamedelimi B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2d0b599c6fa37b8dbefe972cea691cf}{%
+           family={Gulati},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7df322984d2bcbeed24e1d9039891cf}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={D.\bibnamedelimi F.\bibnamedelimi B.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9e0bbcdac14f8a061452d633ecb870ec}
+      \strng{fullhash}{b8676e65747eea73885252c91ef966aa}
+      \strng{bibnamehash}{b8676e65747eea73885252c91ef966aa}
+      \strng{authorbibnamehash}{b8676e65747eea73885252c91ef966aa}
+      \strng{authornamehash}{9e0bbcdac14f8a061452d633ecb870ec}
+      \strng{authorfullhash}{b8676e65747eea73885252c91ef966aa}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Clinical Pharmacokinetics}
+      \field{number}{2}
+      \field{title}{Bayesian pharmacokinetic modelling}
+      \field{volume}{50}
+      \field{year}{2011}
+      \field{pages}{75\bibrangedash 88}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.2165/11538380-000000000-00000
+      \endverb
+    \endentry
+    \entry{fahie2023verapamil}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=00d260b341c238996f8a03a581fe86bd}{%
+           family={Fahie},
+           familyi={F\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d73c6781dfaade12f223275390b432c0}{%
+           family={Cassagnol},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1647647e4a232757f06fbc3c80863d5d}
+      \strng{fullhash}{1647647e4a232757f06fbc3c80863d5d}
+      \strng{bibnamehash}{1647647e4a232757f06fbc3c80863d5d}
+      \strng{authorbibnamehash}{1647647e4a232757f06fbc3c80863d5d}
+      \strng{authornamehash}{1647647e4a232757f06fbc3c80863d5d}
+      \strng{authorfullhash}{1647647e4a232757f06fbc3c80863d5d}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing}
+      \field{note}{Updated 2023 Feb 6; StatPearls Publishing; 2025 Jan--. PMID: 30860730}
+      \field{title}{Verapamil}
+      \field{year}{2023}
+    \endentry
+    \entry{gelman2017conceptualhmc}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \strng{fullhash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \strng{bibnamehash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \strng{authorbibnamehash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \strng{authornamehash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \strng{authorfullhash}{1e1eb60e3b6e222217bf8e9b24070b28}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Conceptual Introduction to Hamiltonian Monte Carlo}
+      \field{urlday}{25}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://statmodeling.stat.columbia.edu/2017/01/12/conceptual-introduction-hamiltonian-monte-carlo/
+      \endverb
+      \verb{url}
+      \verb https://statmodeling.stat.columbia.edu/2017/01/12/conceptual-introduction-hamiltonian-monte-carlo/
+      \endverb
+    \endentry
+    \entry{gelman2025bayesian}{book}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f088783ee75f9f0908eeb4fa9571a31}{%
+           family={Carlin},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd9cbf9e3046ffa6a7cecf24e1a46b03}{%
+           family={Stern},
+           familyi={S\bibinitperiod},
+           given={Hal\bibnamedelima S.},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84545b54e408a7eba6bf9280fd2eaae7}{%
+           family={Dunson},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d36e97683cbc9d6ef06fc2ec40becb0}{%
+           family={Vehtari},
+           familyi={V\bibinitperiod},
+           given={Aki},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49a367b6280de8a239f8bbdd573f996f}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={Donald\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Chapman \& Hall/CRC}%
+      }
+      \strng{namehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{fullhash}{5c09c13430845c0df008aa82cfeb78ef}
+      \strng{bibnamehash}{5c09c13430845c0df008aa82cfeb78ef}
+      \strng{authorbibnamehash}{5c09c13430845c0df008aa82cfeb78ef}
+      \strng{authornamehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{authorfullhash}{5c09c13430845c0df008aa82cfeb78ef}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Bayesian data analysis}
+      \field{year}{2025}
+    \endentry
+    \entry{gelman2018rsquared}{unpublished}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9cc812cde8c441e79dfaab4955a72c2c}{%
+           family={Goodrich},
+           familyi={G\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d22d0f2897624075bcba3f2195a96094}{%
+           family={Gabry},
+           familyi={G\bibinitperiod},
+           given={Jonah},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d36e97683cbc9d6ef06fc2ec40becb0}{%
+           family={Vehtari},
+           familyi={V\bibinitperiod},
+           given={Aki},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{fullhash}{eaef5d64f4cab934c3c2aaa55cedd228}
+      \strng{bibnamehash}{eaef5d64f4cab934c3c2aaa55cedd228}
+      \strng{authorbibnamehash}{eaef5d64f4cab934c3c2aaa55cedd228}
+      \strng{authornamehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{authorfullhash}{eaef5d64f4cab934c3c2aaa55cedd228}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{Manuscrito no publicado}
+      \field{title}{R-squared for Bayesian regression models}
+      \field{year}{2018}
+    \endentry
+    \entry{gelman2013predictive}{online}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=57f3f25f58a60f557d446fcf3a27d81b}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={Jessica},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d36e97683cbc9d6ef06fc2ec40becb0}{%
+           family={Vehtari},
+           familyi={V\bibinitperiod},
+           given={Aki},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{fullhash}{8a6f2f44ae711dce375815d0a15266f1}
+      \strng{bibnamehash}{8a6f2f44ae711dce375815d0a15266f1}
+      \strng{authorbibnamehash}{8a6f2f44ae711dce375815d0a15266f1}
+      \strng{authornamehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{authorfullhash}{8a6f2f44ae711dce375815d0a15266f1}
+      \field{extraname}{3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Preprint en arXiv}
+      \field{title}{Understanding predictive information criteria for Bayesian models}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1307.5928
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1307.5928
+      \endverb
+    \endentry
+    \entry{gramhansen2019hmc}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a66d16fe647a09bebfa13132ad097415}{%
+           family={Gram-Hansen},
+           familyi={G\bibinithyphendelim H\bibinitperiod},
+           given={Bradley},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a66d16fe647a09bebfa13132ad097415}
+      \strng{fullhash}{a66d16fe647a09bebfa13132ad097415}
+      \strng{bibnamehash}{a66d16fe647a09bebfa13132ad097415}
+      \strng{authorbibnamehash}{a66d16fe647a09bebfa13132ad097415}
+      \strng{authornamehash}{a66d16fe647a09bebfa13132ad097415}
+      \strng{authorfullhash}{a66d16fe647a09bebfa13132ad097415}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The beginners guide to Hamiltonian Monte Carlo}
+      \field{urlday}{25}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://bayesianbrad.github.io/posts/2019_hmc.html
+      \endverb
+      \verb{url}
+      \verb https://bayesianbrad.github.io/posts/2019_hmc.html
+      \endverb
+    \endentry
+    \entry{hoff2009first}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4f65d919a92f4c4afcabd6cad3be75ae}{%
+           family={Hoff},
+           familyi={H\bibinitperiod},
+           given={Peter\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \strng{fullhash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \strng{bibnamehash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \strng{authorbibnamehash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \strng{authornamehash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \strng{authorfullhash}{4f65d919a92f4c4afcabd6cad3be75ae}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A first course in Bayesian statistical methods}
+      \field{year}{2009}
+    \endentry
+    \entry{jain2023quinidine}{online}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2de151a1ac0a17aa53428d3dfd3df296}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Ankit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ec48e2e1a828578aa54f28218ede5ef}{%
+           family={Sisodia},
+           familyi={S\bibinitperiod},
+           given={Jyoti},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d521deb8777bf2d7b030dd05511fedc8}
+      \strng{fullhash}{d521deb8777bf2d7b030dd05511fedc8}
+      \strng{bibnamehash}{d521deb8777bf2d7b030dd05511fedc8}
+      \strng{authorbibnamehash}{d521deb8777bf2d7b030dd05511fedc8}
+      \strng{authornamehash}{d521deb8777bf2d7b030dd05511fedc8}
+      \strng{authorfullhash}{d521deb8777bf2d7b030dd05511fedc8}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{En StatPearls. StatPearls Publishing}
+      \field{title}{Quinidine}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/books/NBK542193/
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/books/NBK542193/
+      \endverb
+    \endentry
+    \entry{january2000early}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9bd16b65d1469d082e37a3c116bca187}{%
+           family={January},
+           familyi={J\bibinitperiod},
+           given={Craig\bibnamedelima T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f85ecf599abc19392532181bdc4e474b}{%
+           family={Riddle},
+           familyi={R\bibinitperiod},
+           given={John\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{54302c4706efbbf0a419bc74433e4e3c}
+      \strng{fullhash}{54302c4706efbbf0a419bc74433e4e3c}
+      \strng{bibnamehash}{54302c4706efbbf0a419bc74433e4e3c}
+      \strng{authorbibnamehash}{54302c4706efbbf0a419bc74433e4e3c}
+      \strng{authornamehash}{54302c4706efbbf0a419bc74433e4e3c}
+      \strng{authorfullhash}{54302c4706efbbf0a419bc74433e4e3c}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Circulation}
+      \field{number}{21}
+      \field{title}{Early afterdepolarizations: Mechanism of induction and block}
+      \field{volume}{102}
+      \field{year}{2000}
+      \field{pages}{2665\bibrangedash 2669}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1161/01.CIR.102.21.2665
+      \endverb
+    \endentry
+    \entry{khan2006blood}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5b470f24298ff88707c2aa2971cebcd8}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{5b470f24298ff88707c2aa2971cebcd8}
+      \strng{fullhash}{5b470f24298ff88707c2aa2971cebcd8}
+      \strng{bibnamehash}{5b470f24298ff88707c2aa2971cebcd8}
+      \strng{authorbibnamehash}{5b470f24298ff88707c2aa2971cebcd8}
+      \strng{authornamehash}{5b470f24298ff88707c2aa2971cebcd8}
+      \strng{authorfullhash}{5b470f24298ff88707c2aa2971cebcd8}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Encyclopedia of heart diseases}
+      \field{title}{Blood pressure}
+      \field{year}{2006}
+      \field{pages}{175\bibrangedash 181}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/B978-012373884-4.00028-1
+      \endverb
+    \endentry
+    \entry{martin2021bayesian}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c6984ec87761c82242d9a0701910359e}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Osvaldo\bibnamedelima A.},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dae4f0961704dd3825c933ae96784b4d}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Ravin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19906cef1fc823e3e291977d16b53535}{%
+           family={Lao},
+           familyi={L\bibinitperiod},
+           given={Junpeng},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{d74748f100ea1d40c7951016563d9e81}
+      \strng{fullhash}{d86b731034b15bf41bab9088f69f29db}
+      \strng{bibnamehash}{d86b731034b15bf41bab9088f69f29db}
+      \strng{authorbibnamehash}{d86b731034b15bf41bab9088f69f29db}
+      \strng{authornamehash}{d74748f100ea1d40c7951016563d9e81}
+      \strng{authorfullhash}{d86b731034b15bf41bab9088f69f29db}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bayesian modeling and computation in Python}
+      \field{year}{2021}
+    \endentry
+    \entry{mcelreath2020statrethinking}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=51204ab1ac6fd3aa8b649ff12ae89bf1}{%
+           family={McElreath},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{fullhash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{bibnamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authorbibnamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authornamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authorfullhash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical rethinking: A Bayesian course with examples in R and Stan}
+      \field{year}{2020}
+    \endentry
+    \entry{monroe_qt}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff7349c022a423b427cedb17db9a40ea}{%
+           family={{Monroe Community College}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff7349c022a423b427cedb17db9a40ea}
+      \strng{fullhash}{ff7349c022a423b427cedb17db9a40ea}
+      \strng{bibnamehash}{ff7349c022a423b427cedb17db9a40ea}
+      \strng{authorbibnamehash}{ff7349c022a423b427cedb17db9a40ea}
+      \strng{authornamehash}{ff7349c022a423b427cedb17db9a40ea}
+      \strng{authorfullhash}{ff7349c022a423b427cedb17db9a40ea}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Recuperado el 30 de abril de 2025}
+      \field{title}{Understanding the QT/QTc measurement}
+      \field{year}{n.d.}
+      \verb{urlraw}
+      \verb https://www.monroecc.edu/depts/pstc/ems/paramedic/paramedic-training-at-mcc/degree-program-content/cardiology/understanding-the-qtqtc-measurement/
+      \endverb
+      \verb{url}
+      \verb https://www.monroecc.edu/depts/pstc/ems/paramedic/paramedic-training-at-mcc/degree-program-content/cardiology/understanding-the-qtqtc-measurement/
+      \endverb
+    \endentry
+    \entry{pfizer1999tikosyn}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=99ba5af2f2853f16ecf17eea27797e81}{%
+           family={{Pfizer Labs}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{99ba5af2f2853f16ecf17eea27797e81}
+      \strng{fullhash}{99ba5af2f2853f16ecf17eea27797e81}
+      \strng{bibnamehash}{99ba5af2f2853f16ecf17eea27797e81}
+      \strng{authorbibnamehash}{99ba5af2f2853f16ecf17eea27797e81}
+      \strng{authornamehash}{99ba5af2f2853f16ecf17eea27797e81}
+      \strng{authorfullhash}{99ba5af2f2853f16ecf17eea27797e81}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Material de prescripción del fabricante}
+      \field{title}{Tikosyn (dofetilide) package insert}
+      \field{year}{1999}
+    \endentry
+    \entry{rang2023cardio}{online}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9c0a56d1a57b88ed6245ca2a777da2db}{%
+           family={Rang},
+           familyi={R\bibinitperiod},
+           given={Humphrey\bibnamedelima P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dea3b03b910636f0aab0633817be78e6}{%
+           family={Stringer},
+           familyi={S\bibinitperiod},
+           given={Janet\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \strng{fullhash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \strng{bibnamehash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \strng{authorbibnamehash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \strng{authornamehash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \strng{authorfullhash}{fb4e84daae6a2dcf3707b1c4571cf5ca}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{month}{3}
+      \field{note}{Encyclopædia Britannica}
+      \field{title}{Cardiovascular drug}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.britannica.com/science/cardiovascular-drug
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/science/cardiovascular-drug
+      \endverb
+    \endentry
+    \entry{raynerhartley2016ranolazina}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e06c8bc24e770ecbb7ab0670724e6793}{%
+           family={Rayner-Hartley},
+           familyi={R\bibinithyphendelim H\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbccdc9fc9d2ee2d8a83c778fb528c28}{%
+           family={Sedlak},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5c97daf3765c229e1649ba9b971f60a7}
+      \strng{fullhash}{5c97daf3765c229e1649ba9b971f60a7}
+      \strng{bibnamehash}{5c97daf3765c229e1649ba9b971f60a7}
+      \strng{authorbibnamehash}{5c97daf3765c229e1649ba9b971f60a7}
+      \strng{authornamehash}{5c97daf3765c229e1649ba9b971f60a7}
+      \strng{authorfullhash}{5c97daf3765c229e1649ba9b971f60a7}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Manuscrito no publicado}
+      \field{title}{Revisión del uso de ranolazina en el tratamiento de la angina y otras condiciones cardíacas}
+      \field{year}{2016}
+    \endentry
+    \entry{salvatier2016pymc3}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05c761e203cc6c586605836fa4676d10}{%
+           family={Salvatier},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50f495e80088cea41d5ff3a042dfb728}{%
+           family={Wiecki},
+           familyi={W\bibinitperiod},
+           given={Thomas\bibnamedelima V.},
+           giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9524daf70c4a2e189d4efb9eb659bb8e}{%
+           family={Fonnesbeck},
+           familyi={F\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{abfae452a57f1beb54edb571049fb0a2}
+      \strng{fullhash}{84d195951c6ec056c0d274af93148826}
+      \strng{bibnamehash}{84d195951c6ec056c0d274af93148826}
+      \strng{authorbibnamehash}{84d195951c6ec056c0d274af93148826}
+      \strng{authornamehash}{abfae452a57f1beb54edb571049fb0a2}
+      \strng{authorfullhash}{84d195951c6ec056c0d274af93148826}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PeerJ Computer Science}
+      \field{title}{Probabilistic programming in Python using PyMC3}
+      \field{volume}{2}
+      \field{year}{2016}
+      \field{pages}{e55}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.7717/peerj-cs.55
+      \endverb
+    \endentry
+    \entry{vanravenzwaaij2018mcmc}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=58c29f2fe9a7c86b8eaece07fc748e17}{%
+           family={Ravenzwaaij},
+           familyi={R\bibinitperiod},
+           given={Don},
+           giveni={D\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=3c64d1e2926a9c376708de2e97857bd0}{%
+           family={Cassey},
+           familyi={C\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c45a8eeded8ac3f0346f06537d9a683}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Scott\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3a574c810e69b1a171565a9cb9bd07b4}
+      \strng{fullhash}{2790b1b691505b02acad6b613ab3e887}
+      \strng{bibnamehash}{2790b1b691505b02acad6b613ab3e887}
+      \strng{authorbibnamehash}{2790b1b691505b02acad6b613ab3e887}
+      \strng{authornamehash}{3a574c810e69b1a171565a9cb9bd07b4}
+      \strng{authorfullhash}{2790b1b691505b02acad6b613ab3e887}
+      \field{sortinit}{v}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychonomic Bulletin \& Review}
+      \field{number}{1}
+      \field{title}{A simple introduction to Markov Chain Monte-Carlo sampling}
+      \field{volume}{25}
+      \field{year}{2018}
+      \field{pages}{143\bibrangedash 154}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.3758/s13423-016-1015-8
+      \endverb
+    \endentry
+    \entry{vicente2015comprehensive}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=5d4e244a5065e57049d9407bfb1be9d3}{%
+           family={Vicente},
+           familyi={V\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae303367702899bb55cf593ae5c49057}{%
+           family={Johannesen},
+           familyi={J\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fefa10c7b13053958861b1704cd476df}{%
+           family={Mason},
+           familyi={M\bibinitperiod},
+           given={Jay\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1fa07d398e56b03ec280db01b70bf75e}{%
+           family={Crumb},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelima J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efaef66a32104895fc5a4a55af16ec74}{%
+           family={Pueyo},
+           familyi={P\bibinitperiod},
+           given={Esther},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce6e7791a9e88089366e8309df9577eb}{%
+           family={Stockbridge},
+           familyi={S\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d3de4a6e5f77d6254ea630328d4277d}{%
+           family={Strauss},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d7328d5cbbe034b724072255fb58ad5b}
+      \strng{fullhash}{8955848982dbc9142556f014ac523137}
+      \strng{bibnamehash}{8955848982dbc9142556f014ac523137}
+      \strng{authorbibnamehash}{8955848982dbc9142556f014ac523137}
+      \strng{authornamehash}{d7328d5cbbe034b724072255fb58ad5b}
+      \strng{authorfullhash}{8955848982dbc9142556f014ac523137}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Heart Association}
+      \field{number}{4}
+      \field{title}{Comprehensive T wave morphology assessment in a randomized clinical study of dofetilide, quinidine, ranolazine, and verapamil}
+      \field{volume}{4}
+      \field{year}{2015}
+      \field{pages}{e001615}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1161/JAHA.114.001615
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

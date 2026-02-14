@@ -1,0 +1,1783 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{xcolor}        % Para colores de los links
+\usepackage[
+colorlinks=true,       % Colorea los enlaces
+linkcolor=blue,        % Enlaces internos (TOC, ecuaciones, figuras, etc.)
+citecolor=blue,        % Citas bibliográficas
+urlcolor=blue,         % Enlaces a sitios web
+pdfborder={0 0 0}      % Sin recuadro alrededor
+]{hyperref}
+
+\usepackage{tabularx, booktabs} 
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup[table]{name=Tabla} %AQUI PUSE PARA ESO DEL NOMBRE
+\captionsetup[table]{labelfont=bf, textfont=normalfont, labelsep=period}
+\captionsetup[figure]{labelfont=bf, textfont=it, labelsep=period}
+\usepackage{listings}
+\lstset{
+	backgroundcolor=\color{gray!10},   % fondo gris claro
+	basicstyle=\ttfamily\small,        % fuente monoespaciada pequeña
+	numbers=left,                      % numeración a la izquierda
+	numberstyle=\tiny\color{gray},     % estilo de números
+	breaklines=true,                   % dividir líneas largas
+	frame=single,                      % marco alrededor del código
+	captionpos=b,                      % título debajo del código (APA recomienda debajo)
+	language=Python                    % ajusta el lenguaje
+}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{csquotes}
+\usepackage[style=apa, backend=biber, language=spanish, sorting=nyt]{biblatex}
+\addbibresource{referencias.bib}
+\captionsetup[figure]{%
+	labelfont=bf,        % "Figura 1" en negrita
+	textfont=it,         % Título en cursiva
+	labelsep=period,     % Punto después del número
+	justification=justified,
+	singlelinecheck=false
+}
+% Para que no se traduzca "et al."
+\DefineBibliographyStrings{spanish}{
+	andothers = {et al.}
+}
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\newcommand{\subsubsubsection}[1]{%
+	\refstepcounter{subsubsubsection}%
+	\par\medskip\noindent\textit{\textbf{\thesubsubsubsection\quad #1}}\par\nopagebreak
+	\addcontentsline{toc}{paragraph}{\thesubsubsubsection\quad #1}
+}
+
+% Configuración de numeración
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{4}
+\geometry{left=3cm, right=2.5cm, top=3cm, bottom=2.5cm}
+\onehalfspacing
+
+
+% -------------------------------
+% Carátula estilo UNACH
+% -------------------------------
+\begin{document}
+	\begin{titlepage}
+		\centering
+		\includegraphics[width=4cm]{logouce.png}\par\vspace{1cm} % Reemplaza con tu logo
+		{\scshape\Large UNIVERSIDAD NACIONAL DE CHIMBORAZO \par}
+		{\scshape\large FACULTAD DE CIENCIAS ECONÓMICAS, \par}
+		{\scshape\large CARRERA DE ESTADÍSTICA \par}
+		\vspace{1.5cm}
+		{\bfseries\large ``Biomarcadores digitales del movimiento para apoyo al diagnóstico diferencial del Parkinson mediante análisis funcional de señales inerciales de smartwatch.'' \par}
+		\vspace{1cm}
+		{\scshape\large PERFIL DEL PROYECTO DE INVESTIGACIÓN PRESENTADO COMO REQUISITO PARCIAL PARA APROBAR EL TRABAJO DE TITULACIÓN, Y OPTAR AL TÍTULO DE INGENIERO EN ESTADÍSTICA \par}
+		\vspace{1cm}
+		\begin{flushleft}
+			\textbf{AUTOR:} Byron Morocho Caizatoa.\\
+			\textbf{TUTOR:} XXXX.
+		\end{flushleft}
+		\vfill
+		\begin{flushright}
+			\textbf{Quito -- Ecuador,} \textbf{2026}
+		\end{flushright}
+	\end{titlepage}
+	
+
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\newpage
+
+\renewcommand{\thesection}{\Roman{section}}
+\setcounter{section}{0} % para que la primera sea I
+	\newpage
+	
+\section*{TEMA}
+\addcontentsline{toc}{section}{TEMA}
+
+Apoyo al diagnóstico diferencial del Parkinson a partir de patrones motores capturados por smartwatch y analizados con técnicas de datos funcionales.
+
+\section*{TÍTULO}
+\addcontentsline{toc}{section}{TÍTULO}
+
+Biomarcadores digitales del movimiento para apoyo al diagnóstico diferencial del Parkinson mediante análisis funcional de señales inerciales de smartwatch.
+
+
+\section*{JUSTIFICACIÓN}
+\addcontentsline{toc}{section}{JUSTIFICACIÓN}
+
+El diagnóstico diferencial es el proceso de distinguir entre varias enfermedades que se parecen, puesto que comparten síntomas. El diagnóstico diferencial del Parkinson se presenta como un reto clínico, especialmente en sus fases tempranas o cuando coexisten trastornos del movimiento con síntomas parecidos. Errores en la clasificación pueden derivar en tratamientos y seguimientos incorrectos. Los biomarcadores digitales son medidas cuantitativas que se obtienen a partir de sensores, teléfonos, relojes, etc., y sirven para detectar y caracterizar el estado de salud de un individuo. En este contexto, los biomarcadores digitales derivados del movimiento permiten tener una evaluación clínica complementaria a la tradicional.
+
+La transformación de señales inerciales de acelerómetros y giroscopios es útil para la evidencia clínica, por lo que requiere de una metodología estadística robusta capaz de representar la naturaleza temporal y continua del movimiento. El análisis de datos funcionales permite modelar a cada registro como una función en el tiempo, manteniendo la estructura dinámica; así se podrá extraer componentes que sinteticen las principales variaciones del movimiento. Esta aproximación facilita la construcción de modelos predictivos más robustos.
+
+Por lo que esta investigación pretende aportar con una metodología para construir y validar biomarcadores digitales del movimiento dirigidos al apoyo del diagnóstico diferencial del Parkinson, utilizando la teoría de datos funcionales con la reducción de dimensiones y de clasificación multiclase. El resultado permitirá explicar qué características temporales y qué condiciones de medición son más informativas, contribuyendo a una evaluación objetiva, además de robustecer la toma de decisiones en las áreas médicas.
+	
+	\section{Objetivos}
+	\subsection{Objetivo General}
+	Predecir el intervalo QT en pacientes medicados con Ranolazina, Dofetilida, Verapamilo o Quinidina, mediante modelos jerárquicos bayesianos, incorporando variables clínicas y electrocardiográficas para identificar factores que contribuyan en la repolarización ventricular.
+	\subsection{Objetivo Específico}
+	\begin{itemize}
+		\item Construir modelos jerárquicos bayesianos que expliquen la duración del intervalo QT.
+		
+		\item Estimar los parámetros de los modelos bayesianos jerárquicos mediante Hamilton Monte Carlo (HMC).
+		
+		\item Calcular métricas de desempeño predictivo de los modelos.
+		
+		\item Diseñar un aplicativo de predicción con el modelo más robusto.
+		
+	\end{itemize}
+	
+	\chapter{Marco Teórico}
+\section{Estado del Arte}
+
+Las alteraciones en la repolarización ventricular, ya sea por una prolongación o un acortamiento anormal del intervalo QT, constituyen un importante marcador de riesgo cardiovascular, al permitir la detección de arritmias que pueden conducir a la muerte súbita. \textcite{vicente2015comprehensive} encontraron que la Dofetilida y la Quinidina prolongan marcadamente el intervalo QT; la Ranolazina produjo únicamente una prolongación leve (~5 ms), y el Verapamilo no presentó evidencia de alterar significativamente dicho intervalo. En estudios realizados con animales, específicamente en conejos, se observó que la Dofetilida provocó una mayor prolongación del intervalo QT \parencite{baczko2020transgenic}.
+
+
+Por otro lado, mediante simulaciones computacionales, se ha evidenciado que la Dofetilida prolonga el potencial de acción en relación con el intervalo QT, mientras que, para fármacos multicanal (Quinidina, Verapamilo), las predicciones mostraron discrepancias respecto a los datos experimentales \parencite{Britton2017}. En el plano estadístico, la aplicación de modelos bayesianos a este tipo de análisis aún es limitada. No obstante, investigaciones como la de \parencite{Duffull2011} han demostrado el potencial de los modelos bayesianos jerárquicos para evaluar la relación dosis-respuesta en cardiotoxicidad. Dicho estudio resalta la eficiencia de modelar la incertidumbre presente en las variables, así como la robustez predictiva del modelo y las posibles mejoras a considerar, lo cual permite orientar una toma de decisiones adecuada frente a la población afectada por enfermedades cardiovasculares.
+
+
+El estudio realizado por \textcite{chen2010bayesian} propone un modelo jerárquico bayesiano mediante el uso del muestreador de Gibbs el cual considera los errores de medición para el intervalo QT y el intervalo RR para mejorar la estimación del intervalo QTc. Demuestra que el enfoque bayesiano supera a los métodos tradicionales.
+
+
+En conjunto, la literatura evidencia un creciente interés en integrar los campos de las ciencias aplicadas, computacionales, estadísticas y médicas para optimizar la evaluación del riesgo, la eficacia y la toxicidad en tópicos cardiológicos farmacológicos. No obstante, actualmente existe un vacío considerable en el uso sistemático de modelos bayesianos mediante Hamilton Monte Carlo aplicados al análisis del intervalo QT y, en general, a otros marcadores cardíacos.
+
+\section{Variables en Investigaciones de Salud}
+\subsection{Variables Electrocardiográficas}
+Las variables son características que están sometidas a cambios en un mismo individuo (paciente) en un mismo instante o durante el tiempo. El dato es el valor real que toma la variable estudiada en cada unidad de observación (paciente) del estudio el cual se obtiene mediante un proceso de recolección. Las variables pueden clasificarse de varias maneras, según sus características en un estudio, según su naturaleza, según su función desempeñada, etc. \parencite{castrojimenez2009variables}. 
+
+\subsubsection{Intervalo QT}
+El intervalo QT es una medida que representa el tiempo total desde la despolarización (el corazón se activa para contraerse) ventricular hasta la repolarización (el corazón se recupera y se recarga para el siguiente latido) completa. El proceso comienza al inicio de la onda Q y se extiende hasta el final de la onda T. De ser inexistente el punto de partida Q entonces el punto de partida ahora será la onda Q. El intervalo QT se ve afectado por muchos factores como lo es la frecuencia cardíaca, el sistema nervioso autónomo, los electrolitos, algunos fármacos, la edad, el sexo del paciente. La correcta lectura e interpretación del intervalo QT ayudan a prevenir problemas que amenacen la vida de los pacientes, para ellos existen gráficas donde se tiene en cuenta la frecuencia cardíaca, el sexo y la edad del paciente \parencite{monroe_qt}.  
+
+Un intervalo QT (Figura~\ref{fig:1}) largo o prolongado significa que su repolarización es más lenta de lo normal, si el corazón no se repolariza a tiempo, el próximo latido puede llegar demasiado pronto, generando un ritmo anormal y peligroso. Las unidades de medida del intervalo QT es milisegundos (ms), un QT normal suele estar entre 350 y 450 ms dependiendo de las características del paciente.
+
+\begin{figure}[H]
+	\centering
+	\caption{Onda del electrocardiograma y representación del intervalo QT.}
+	\includegraphics[width=0.6\textwidth]{Imagen 1.png}
+	\label{fig:1}
+\end{figure}
+
+
+
+
+\subsubsection{Intervalo RR}
+El intervalo RR (Figura~\ref{fig:2}) es el tiempo que transcurre entre dos ondas sucesivas, es una función del nodo sinusal y su duración depende de la frecuencia cardíaca. Una alta variabilidad del intervalo RR es un índice positivo para afrontar desafíos por parte del sistema cardiovascular.
+
+\begin{figure}[H]
+	\centering
+	\caption{Onda del electrocardiograma y representación del intervalo RR.}
+	\includegraphics[width=0.6\textwidth]{Imagen 2.png}
+	\label{fig:2}
+\end{figure}
+
+
+\subsubsection{Presión Arterial Sistólica y Diastólica}
+La presión en las arterias cuando el corazón se contrae se conoce como presión arterial sistólica, comúnmente es menor que 140 milímetros de mercurio (mmHg). La presión en las arterias cuando el corazón esta relajado se conoce como presión arterial diastólica y comúnmente es menor de 90 milímetros de mercurio. Cada contracción del corazón impulsa la sangre a través de las arterias en forma de onda de pulso. Por lo que el flujo sanguíneo en las arterias es pulsátil. Una onda tiene una cresta y un valle, la cresta ocurre cuando el corazón contrae y la presión es alta, mientras que el valle ocurre cuando el corazón se relaja, produciendo presión baja \parencite{khan2006blood}.
+
+\subsubsection{Puntaje de asimetría de la onda T}
+El puntaje de asimetría de onda T es una medida que cuantifica las diferencias en las formas ascendentes y descendentes de la onda T en un electrocardiograma. Se utiliza para evaluar la simetría de la onda T, donde los valores altos son indicadores de una mayor asimetría, lo que conlleva a diversas condiciones cardiacas como anomalías en la repolarización. 
+
+\subsubsection{Intervalo $J-T_p$}
+Representa el tiempo desde el final del intervalo QRS (Figura~\ref{fig:3}) hasta el pico de la onda T, sirve como marcador de la repolarización temprana en el corazón. Los cambios en el intervalo $J-T$ tienen la propiedad de poder mostrar las diferencias entre fármacos según los efectos en los canales iónicos.
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalo JTp.}
+	\includegraphics[width=0.6\textwidth]{Imagen 3.png}
+	\label{fig:3}
+\end{figure}
+
+\subsubsection{Variables Clínicas}
+Las investigaciones en áreas de las ciencias médicas y de la salud, las variables como el tratamiento, el sexo y la edad son fundamentales para entender el proceso evolutivo de enfermedades, tratamientos, etc. El tratamiento forma parte de la intervención médica administrada a un paciente que puede o no tener resultados en el paciente. El sexo afecta a parámetros fisiológicos, hormonales y de metabolismo en los fármacos, mientras que la edad cambia con el tiempo en la forma funcional de respuesta ante la progresión de enfermedades o tratamientos. Estas variables son consideradas principales en todo análisis clínico para garantizar validez ante tratamientos, ensayos clínicos, etc. 
+
+\section{Fármacos}
+Un fármaco cardiovascular es cualquier agente que afecta la función del corazón y los vasos sanguíneos. Los medicamentos que actúan sobre el sistema cardiovascular se encuentran entre los más usados en la medicina. La Dofetilida, Quinidina, Ranolazina y el Verapamilo afectan directa o indirectamente la función eléctrica y mecánica del corazón, por lo que son catalogados como fármacos cardiovasculares, diferenciándose en su estructura química, la Ranolazina tiene una estructura basada en anillos con nitrógeno, la Dofetilida incluye grupos azufrados, el Verapamilo tiene dos anillos conectados por una cadena de nitrógeno y la Quinidina contiene una estructura compleja de varios anillos y oxígeno \parencite{rang2023cardio}
+
+\subsection{Dofetilida}
+\textcite{january2000early}explican que la Dofetilida es un fármaco antiarrítmico utilizado en casos de fibrilación auricular, bloquea la corriente de potasio en todos los tejidos del miocardio con alta potencia. El bloqueo por Dofetilida aumenta a medida que la concentración extracelular de potasio disminuye, además de ser independiente de la frecuencia cardiaca, pero tiene un efecto de prolongar la duración del potencial de acción y de disminuir el intervalo QT a medida que la frecuencia cardiaca aumenta. En cuanto a intervalos RR similares, la Dofetilida produce mayor prolongación del intervalo QT durante frecuencias cardiacas lentas. \vspace{0.5em} 
+
+La Dofetilida se absorbe bien después de su administración oral, con una biodisponibilidad (cantidad y velocidad con la que un medicamento o sustancia activa llega a la sangre) absoluta superior al $90\%$. La ingestión junto con alimentos retrasa la absorción, pero no afecta la biodisponibilidad total. Aproximadamente entre el $70\%$ y el $80\%$ de la Dofetilida absorbida se excreta como fármaco sin cambios a través del riñón, basándose en datos de ensayos clínicos, se recomienda que la dosis de Dofetilida se ajuste según el aclaramiento de creatinina estimado mediante la ecuación de Cockcroft y Gault \parencite{pfizer1999tikosyn}.
+
+\subsection{Quinidina}
+
+Es un estereoisómero de la quinina, el cual se deriva de la corteza del árbol de la quina. Se considera uno de los primeros antiarrítmicos conocidos y actúa como antiarrítmico y en ciertas ocasiones para la malaria y a partir del año 2023 se realizan estudios para tratar trastornos epilépticos. Al igual que otros antiarrítmicos, la quinidina inhibe la corriente rápida de entrada de sodio, lo que implica que el efecto del fármaco aumenta durante las frecuencias cardiacas más altas y disminuye durante las frecuencias cardiacas más bajas. La quinidina reduce el flujo de potasio durante la repolarización, además de afectar el transporte de calcio a través de las membranas celulares. Estos efectos combinados contribuyen a la prolongación del intervalo QRS y QT \parencite{jain2023quinidine}. \vspace{0.5em} 
+
+En algunos casos, la prolongación del intervalo QT puede progresar a taquiarritmia pleomórfica, que afecta del $1\%$ al $3\%$ de los pacientes. La prolongación de intervalos QT es más pronunciada en mujeres que en hombres, y la prolongación grave del intervalo QT puede indicar toxicidad farmacológica. 
+
+\subsection{Ranolazina}
+La Ranolazina es medicamento derivado de la piperazina que inhibe selectivamente la corriente tardía de sodio y potasio. A demás posee propiedades metabólicas importantes y no afecta la frecuencia cardiaca ni la presión arterial. La Ranolazina puede prolongar puede prolongar el intervalo QT al inhibir la corriente de potasio, no existen casos reportados con efecto adverso en ensayos clínicos, pero existe el riesgo de existencia de efectos adversos al combinar con otros medicamentos que funcionen para la prolongación del intervalo QT. El efecto recientemente reportado de la Ranolazina sobre la frecuencia cardiaca y el producto frecuencia -presión en humanos es novedoso y están en constantes evaluación \parencite{raynerhartley2016ranolazina}.  
+
+La Ranolazina se metaboliza en el hígado por lo que esta contraindicada si se está medicado con antifúngicos, antibióticos, inhibidores de la proteasa del VIH y productos derivados del pomelo. La Ranolazina tiene un margen de respuesta para la prolongación del intervalo QT de entre 2 y 6 milisegundos.
+
+\subsection{Verapamilo}
+
+Según \textcite{fahie2023verapamil}, el Verapamilo es un inhibidor de los canales de calcio cuyo funcionamiento es el tratamiento de arritmias cardíacas y anginas. Los bloqueadores de canales de calcio también alteran el metabolismo de los fibroblastos. El Verapamilo también aumenta el aporte de oxígeno al miocardio, lo cual beneficia a los pacientes con angina. Al igual que todos los bloqueadores de los canales de calcio, una sobredosis de Verapamilo puede provocar efectos inotrópicos y cronotrópicos negativos.
+
+\section{Naturaleza de los Datos}
+
+De un estudio controlado se obtienen datos correspondientes a registros de electrocardiogramas (ECG) obtenidos de pacientes administrados con medicamentos (Dofetilida, Quinidina, Ranolazina, Verapamilo y placebo) que afectan a la actividad eléctrica cardíaca. Cada paciente recibió dosis de los medicamentos, y se realizaron grabaciones de ECG a alta frecuencia. Los datos incluyen señales de ECG, características cardíacas y metadatos clínicos de los pacientes. La base de datos contiene 5232 registros y 10 variables, de las cuales dos son cualitativas y 8 cuantitativas. 
+
+\section{Estadística Bayesiana}
+
+La estadística Bayesiana es una rama de la estadística que se basa principalmente en la probabilidad condicional que se puede calcular mediante el teorema de Bayes (\ref{ec:1}). El concepto de probabilidad condicional es utilizado comúnmente en ciencias médicas y biociencias. La base fundamental de la estadística Bayesiana parte de la relación:
+
+\begin{equation} \label{ec:1}
+	P(\theta, y) = P(y \mid \theta) \, P(\theta).
+\end{equation}
+
+De donde se puede reescribir como:
+\begin{equation} \label{ec:2}
+	P(\theta \mid y) = \frac{P(\theta, y)}{P(y)} = \frac{P(y \mid \theta) \, P(\theta)}{P(y)}.
+\end{equation}
+
+De donde $P(y) = \sum_{\theta} P(\theta) P(y \mid \theta)$ para el caso discreto y $P(y) = \int P(\theta) P(y \mid \theta) \, d\theta$ para el caso continuo.
+
+Además, como el denominador es constante, se puede concluir:
+\begin{equation} \label{ec:3}
+	P(\theta \mid y) \propto P(y \mid \theta) P(\theta)
+\end{equation}
+
+De (\ref{ec:3}), $P(y|\theta)$ es la verosimilitud, $P(\theta)$ la distribución a priori y $P(\theta|y)$ la distribución posterior.
+
+\subsection{Verosimilitud}
+
+Es una función de los parámetros que permite hacer inferencias acerca de su valor a partir de un conjunto de observaciones $y_i$, es decir; 
+
+\begin{equation} \label{ec:4}
+	P(y \mid \theta) = P(y_1, y_2, \dots, y_n \mid \theta) 
+\end{equation}
+
+\begin{equation} \label{ec:5}
+	= P(Y = y_1 \mid \theta) \cdot P(Y = y_2 \mid \theta) \cdots P(Y = y_n \mid \theta)
+	= \prod_{i=1}^{n} P(Y = y_i \mid \theta)
+\end{equation}
+
+\begin{equation} \label{ec:6}
+	= \prod_{i=1}^{n} P(Y = y_i \mid \theta)
+\end{equation}
+
+Finamente (\ref{ec:6}), se puede expresar como:
+\begin{equation} \label{ec:7}
+	L(\theta \mid y) = \prod_{i = 1}^{n} f(y_i \mid \theta)
+\end{equation}
+
+\subsection{Distribución a Priori}
+
+Según \textcite{hoff2009first} una distribución a priori es una parte fundamental de la estadística Bayesiana, representa la información sobre un parámetro desconocido $\theta$ que se combina con la distribución de probabilidad de nuevos datos con la finalidad de obtener una distribución posterior, la cual se utiliza para realizar inferencias y tomar decisiones que estén relacionadas con el parámetro $\theta$, generalmente el parámetro $\theta$ es un vector.
+
+Una distribución a priori puede ser informativa; es decir, aquella que representa el conocimiento previo derivado de resultados anteriores o criterios de expertos, mejorando así la precisión de la estimación de los parámetros. Asimismo, encontramos las distribuciones a priori no informativas, las cuales se utilizan cuando se pretende que la inferencia dependa lo menos posible de información subjetiva. Un ejemplo de estas es la distribución a priori de Jeffreys, la cual tiene la finalidad de mantener la neutralidad frente a las reparametrizaciones.
+
+También encontramos distribuciones a priori conjugadas y no conjugadas. Una distribución a priori se llama conjugada respecto a una distribución de verosimilitud si, al aplicar el teorema de Bayes, la distribución posterior pertenece a la misma familia funcional que la distribución a priori. Por ejemplo: Una distribución Binomial-Beta, la verosimilitud se modela como: $X \sim \text{Binomial}(n, p)$, la distribución \textit{a priori} para el parámetro \( p \) es: $p \sim \text{Beta}(\alpha, \beta)$ y aplicando el teorema de Bayes, la distribución posterior es:$ p \mid X \sim \text{Beta}(\alpha + x, \beta + n - x)$. Es decir, la familia Beta es conjugada de la distribución Binomial. Mientras que la distribución a priori no conjugada es cuando la distribución a priori y la distribución posterior no pertenecen a la misma familia, en estos casos no hay fórmula cerrada y hay que recurrir a métodos numéricos. 
+
+
+
+
+\subsection{Distribución Posterior}
+
+Es la probabilidad condicional de que un evento ocurra después de considerar la información; es decir que si conocemos las probabilidades condicionales de un primer evento podemos determinar las probabilidades condicionales de un segundo evento. Formalmente la distribución posterior representa el conocimiento sobre el parámetro $\theta$ después de observar los valores $y_i$.
+
+Entendamos estos tres conceptos con el siguiente ejemplo. Consideremos
+$\theta \sim \text{Beta}(\alpha, \beta)$, $ p(y \mid \theta) \propto \theta^a (1 - \theta)^b$,  $p(\theta) \propto \theta^{\alpha - 1} (1 - \theta)^{\beta - 1}$. Entonces la distribución posterior es:
+
+\begin{equation} \label{ec:8}
+	P(\theta \mid y) \propto \theta^y (1 - \theta)^{n - y} \cdot \theta^{\alpha - 1} (1 - \theta)^{\beta - 1}
+\end{equation}
+
+\begin{equation} \label{ec:9}
+	P(\theta \mid y) \propto \theta^{y + \alpha - 1} (1 - \theta)^{n - y + \beta - 1}
+\end{equation}
+
+\begin{equation} \label{ec:10}
+	P(\theta \mid y) = \text{Beta}(\theta \mid \alpha + y, \beta + n - y)
+\end{equation}
+
+
+\subsection{Distribución Posterior Predictiva}
+
+La distribución de $\tilde{y}$ se denomina distribución predictiva posterior, posterior debido a que está condicionada a los datos que fueron observados, y predictiva porque es una predicción para una variable observable $\tilde{y}$ \parencite{gelman2025bayesian}. Matemáticamente, se expresa como:
+
+\begin{equation} \label{ec:11}
+	P(\tilde{y} \mid y) = \int P(\tilde{y}, \theta \mid y) \, d\theta
+\end{equation}
+
+\begin{equation} \label{ec:12}
+	P(\tilde{y} \mid y) = \int P(\tilde{y} \mid \theta, y) \, P(\theta \mid y) \, d\theta
+\end{equation}
+
+\begin{equation} \label{ec:13}
+	P(\tilde{y} \mid y) = \int P(\tilde{y} \mid \theta) \, P(\theta \mid y) \, d\theta
+\end{equation}
+
+Esto último debido a la suposición de independencia condicional ente $\tilde{y}$ y $\theta$.
+
+En el modelamiento Bayesiano predictivo lo que nos interesa es simular muestras de la distribución posterior de los parámetros del modelo, además de la distribución posterior predictiva de las observaciones desconocidas $\tilde{y}$ Esta idea se la representa en la tabla \ref{tab:esquema_simulacion_ppc}.
+
+% Preambulo:
+% \usepackage{booktabs}
+% \usepackage{tabularx}
+% \usepackage{float} % para [H]
+% \usepackage{array} % para >{\centering\arraybackslash}X
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{1.2}
+	\setlength{\tabcolsep}{5pt}
+	\small
+	\centering
+	\caption{Representación de la Distribución Posterior Predictiva}
+	\begin{tabularx}{\textwidth}{
+			>{\centering\arraybackslash}p{2.8cm}
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+		}
+		\toprule
+		\textbf{Simulación muestral} &
+		\multicolumn{3}{c}{\textbf{Parámetros}} &
+		\multicolumn{3}{c}{\textbf{Cantidades predictivas}} \\
+		\midrule
+		1 & $\theta_{1}$ & $\cdots$ & $\theta_{k}$ & $\tilde{y}_{1}$ & $\cdots$ & $\tilde{y}_{n}$ \\
+		1 & $\theta_{1}$ & $\cdots$ & $\theta_{k}$ & $\tilde{y}_{1}$ & $\cdots$ & $\tilde{y}_{n}$ \\
+		$\vdots$ & $\vdots$ &  & $\vdots$ & $\vdots$ &  & $\vdots$ \\
+		$S$ & $\theta_{1}$ & $\cdots$ & $\theta_{k}^{S}$ & $\tilde{y}_{1}$ & $\cdots$ & $\tilde{y}_{n}^{S}$ \\
+		\bottomrule
+	\end{tabularx}
+	
+	\vspace{2mm}
+	\begin{minipage}{\textwidth}
+		\small \textit{Nota.} Adaptado de \textcite{gelman2025bayesian}.
+	\end{minipage}
+	
+	\label{tab:esquema_simulacion_ppc}
+\end{table}
+
+
+
+%\begin{figure}[H]
+%	\centering
+%	\caption{Representación de la Distribución Posterior Predictiva.}
+%	\includegraphics[width=0.6\textwidth]{Imagen 4.png}
+%	\label{fig:4}
+%\end{figure}
+
+Siendo $S$ el conjunto de simulaciones almacenadas en un arreglo, $(\theta^s,\tilde{y}^s)$ es la muestra conjunta de parámetros y valores predichas desde la distribución posterior conjunta.  
+
+\section{Modelos Jerárquicos de Regresión}
+
+Los modelos de regresión jerárquica son útiles cuando existen predictores en distintos niveles de variación. Por ejemplo, analizar el rendimiento académico teniendo información de cada estudiante, de su aula y de la institución. no existe un límite de variación que puedan modelarse. La extensión más simple de un modelo de regresión clásico introduce como predictores un conjunto de variables indicadoras para cada una de las unidades de nivel superior en los datos. Los métodos Bayesianos ofrecen una guía clara para manejar la estimación de parámetros desconocidos, aunque las complejidades computacionales pueden ser considerables, especialmente si se sale del ámbito de las especificaciones normales conjugadas \parencite{gelman2025bayesian}.
+
+Matemáticamente un modelo lineal jerárquico se puede expresar como:
+
+\begin{equation} \label{ec:14}
+	Y_{i,j} = \beta_j^T x_{i,j} + e_{i,j}
+\end{equation}
+
+Con \( e_{i,j} \sim \text{i.i.d. } \mathcal{N}(0, \sigma^2) \), donde \( x_{i,j} \) es un vector de regresores de dimensión \( p \times 1 \) para \( i \) observaciones en el grupo \( j \).$Y_{i,j}$ es la varaible dependiente medida en la observación $i$ del grupo $j$, en particular $Y_{1,j}$ es la varaible respuesta en la observación $1$ dentro del grupo $j$. Tomando \( Y_{1,j}, \dots, Y_{n_j,j} \) como \( Y_j \), el modelo se puede escribir como:
+
+\begin{equation} \label{ec:15}
+	Y_j \sim \mathcal{NM}(X_j \beta_j, \sigma^2 I)
+\end{equation}
+
+donde $\mathcal{NM}$ es la distribución normal multivariada.
+
+La heterogeneidad de los coeficientes \( \beta_1, \dots, \beta_m \) se describe como un modelo entre grupos. Al no tener una información previa que logre distinguir los diferentes grupos, 
+se puede modelarlos como intercambiables, es decir, como independientes e idénticamente distribuidos $\beta_1, \dots, \beta_m \sim \text{i.i.d. } \mathcal{NM}(\Theta, \Sigma)$ , donde $\Theta$ es el vector de medias poblacionales de los coeficientes de regresión y $\Sigma$ es la matriz de covarianzas entre grupos de esos coeficientes \parencite{hoff2009first}.
+
+Muchas veces el modelo de regresión jerárquico es conocido como modelo lineal de efectos mixtos, matemáticamente esto se entiende debido a que 
+
+\begin{equation} \label{ec:16}
+	\beta_j = \Theta + \gamma_j
+\end{equation}
+
+\begin{equation} \label{ec:17}
+	\gamma_1, \ldots, \gamma_m \sim \text{i.i.d. } \mathcal{NM}(0, \Sigma)
+\end{equation}
+
+Entonces se concluye que
+
+\begin{equation} \label{ec:18}
+	Y_{i,j} = \beta_j^\top x_{i,j} + e_{i,j} = \Theta^\top x_{i,j} + \gamma_j^\top x_{i,j} + e_{i,j}
+\end{equation}
+
+\begin{equation} \label{ec:19}
+	P(y_j \mid X_j, \beta_j, \gamma) = \prod_{i=1}^{n_j} p(y_{i,j} \mid \beta_j^\top x_{i,j}, \gamma)
+\end{equation}
+
+Esta parametrización tiene a \( \Theta \) como el efecto fijo, puesto que es constante a través de los grupos, mientras que \( \gamma_1, \ldots, \gamma_m \) son efectos aleatorios, puesto que varían.
+
+\section{Inferencia Bayesiana para la estimación de parámetros}
+\subsection{Cadenas de Markov Monte Carlo (MCMC)}
+Una cadena de Markov es una secuencia de variables aleatorias $X_0,X_1,…$ para la cual el estado futuro es condicionalmente independiente de todos los estados pasados dado el estado actual; es decir conocer el estado actual es suficiente para conocer las probabilidades de todos los estados futuros \parencite{martin2021bayesian}, matemáticamente se expresa como
+
+\begin{equation} \label{ec:20}
+	P(X_{n+1} = j \mid X_n = i, X_{n-1} = i_{n-1}, \ldots, X_0 = i_0) = P(X_{n+1} = j \mid X_n = i)
+\end{equation}
+
+A la cual se la conoce como propiedad de Markov. Con esta idea de lo que es una cadena de Markov, podemos definir las simulaciones de Cadenas de Markov Monte Carlo a las cuales nos referiremos de aquí en adelante como MCMC. Estas simulaciones permiten la estimación de parámetros como medias, varianzas y la exploración de la distribución posterior de modelos bayesianos. Para generar muestras, la idea es configurar una Cadena de Markov cuya distribución estacionaria sea la que deseamos muestrear, luego simulamos una secuencia aleatoria de estados de dicha cadena que debe ser lo suficientemente larga como para alcanzar el estado estacionario y luego conservar los estados generados como muestras \parencite{vanravenzwaaij2018mcmc}.
+
+\subsection{Hamilton Monte Carlo}
+
+El algoritmo de Hamilton Monte Carlo (HMC) es un método de MCMC el cual utiliza geometría diferencial de la función de densidad muestreada para generar transiciones eficientes que comprenden la función posterior. También lo podemos entender como la generación de transiciones que contemplan toda la varianza marginal, eliminando así el comportamiento de tipo caminata aleatoria que es la característica del algoritmo de Metrópolis por caminata aleatoria y de los muestreadores de Gibbs comúnmente usados en la inferencia bayesiana \parencite{betancourt2015hmc}. 
+
+El algoritmo de HMC introduce variables auxiliares de momento $\rho$ con $\theta$ parámetros de la distribución objetivo, de donde se tiene la densidad conjunta:
+
+\begin{equation} \label{ec:21}
+	P(\rho, \theta) = P(\rho \mid \theta) \, P(\theta)
+\end{equation}
+
+Esta densidad conjunta construye un Hamiltoniano 
+
+\begin{equation} \label{ec:22}
+	H(\rho, \theta) = -\log[P(\rho \mid \theta)] - \log[P(\theta)]
+\end{equation}
+
+\begin{equation} \label{ec:23}
+	H(\rho, \theta) = T(\rho \mid \theta) + V(\theta)
+\end{equation}
+
+Donde podemos ahora definir la energía cinética y la energía potencial respectivamente como:
+
+\begin{equation} \label{ec:24}
+	T(\rho \mid \theta) = -\log[P(\rho \mid \theta)]
+\end{equation}
+
+\begin{equation} \label{ec:25}
+	V(\theta) = -\log[P(\theta)]
+\end{equation}
+
+Este Hamiltoniano produce una transición muestreando las variables auxiliares de momento, para luego evolucionar el sistema utilizando las ecuaciones de Hamilton:
+
+\begin{equation} \label{ec:26}
+	\frac{d\theta}{dt} = +\frac{\partial H}{\partial \rho} = +\frac{\partial T}{\partial \rho}
+\end{equation}
+
+\begin{equation} \label{ec:27}
+	\frac{d\rho}{dt} = -\frac{\partial H}{\partial \theta} = -\frac{\partial T}{\partial \theta} - \frac{\partial V}{\partial \theta}
+\end{equation}
+
+Los gradientes manejan las transiciones a través de regiones con alta probabilidad permitiendo así una búsqueda eficiente de toda la distribución objetivo. 
+
+\subsubsection{Resolución de las ecuaciones de Hamilton}
+
+Resolver las ecuaciones de Hamilton puede tomar dos caminos, el primero si la función o energía potencial es sencilla, entonces se puede resolver de analíticamente y un segundo que se da en muchos casos el cual se tienen funciones que generan integrales imposibles de resolverlas analíticamente. La solución o una de las posibles soluciones es emplear métodos numéricos los cuales tienen el objetivo de producir una aproximación al valor real, pero implementar métodos numéricos requiere que se discretice las ecuaciones de Hamilton lo cual introduce inevitablemente errores numéricos \parencite{betancourt2017conceptual}.
+
+Un posible método de solución podría ser el método de Euler, pero las propiedades de este método no son óptimas en cuanto a los errores locales posteriores a un paso y globales tras simular durante un intervalo de tiempo. Un integrador más optimo (Figura~\ref{fig:5}) es el integrador de Leapfrong, el cual maneja un error de orden $O(\epsilon^2)$ y un error global de orden $O(\epsilon^3)$.
+
+\begin{figure}[H]
+	\centering
+	\caption{Comparación de Métodos Numéricos.}
+	\includegraphics[width=0.6\textwidth]{Imagen 5.1.png}
+	
+	\vspace{2mm}
+	\begin{minipage}{0.9\textwidth}
+\small \textit{Nota.} Adaptado de \textcite{gramhansen2019hmc}.
+	\end{minipage}
+	
+	\label{fig:5}
+\end{figure}
+
+
+
+\subsubsection{El integrador de Leapfrog }
+
+Tanto el método de Euler como el método de Leapfrog son parte de una clase integradores simplécticos; es decir preservan el volumen, ambos se podrían usar en el algoritmo HMC, pero como lo mencionamos anteriormente Leapfrog maneja errores más bajos lo cual lo convierte en el integrador óptimo para aplicarlo a HMC. Leapfrog toma pasos discretos de un intervalo pequeño de tiempo $\epsilon$, comienza generando un término de momento de manera independiente de los valores del parámetro $\theta$ o del momento $\rho \sim \mathcal{NM}(0, M)$ \parencite{gelman2025bayesian}. Luego alterna las actualizaciones de medio paso del momento y actualizaciones de paso completo de la posición. Matemáticamente se representa como:
+
+\begin{equation} \label{ec:28}
+	\rho \leftarrow \rho - \frac{\epsilon}{2} \frac{\partial V}{\partial \theta}
+\end{equation}
+
+
+\begin{equation} \label{ec:29}
+	\theta \leftarrow \theta + \epsilon M^{-1} \rho
+\end{equation}
+
+
+\begin{equation} \label{ec:30}
+	\rho \leftarrow \rho - \frac{\epsilon}{2} \frac{\partial V}{\partial \theta}
+\end{equation}
+
+Al completar las simulaciones con $L$ repeticiones de los pasos mencionados anteriormente se obtiene el estado resultante $(\rho^*, \theta^*)$.
+
+\textcite{betancourt2017conceptual} presenta la Figura~\ref{fig:6}, la cual es una representación geométrica del funcionamiento del algoritmo HMC, las líneas de fondo (geometría de la energía) representan las curvas de nivel de una densidad de probabilidad objetivo, estas curvas reflejan el espacio donde se va a realizar el muestreo. Las figuras de caras (partículas simuladas) representan las partículas moviéndose, cada figura es una muestra del HMC y evoluciona en el tiempo.$A \rightarrow \varphi_{\frac{\pi}{2}}(A)$  es la muestra A después de aplicar la dinámica durante $\pi/2$ unidades de tiempo, así mismo sucede con la partícula B.
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Representación HMC.}
+	\includegraphics[width=0.6\textwidth]{Imagen 6.png}
+	
+	\vspace{2mm}
+	\begin{minipage}{0.9\textwidth}
+		\small \textit{Nota.} Adaptado de \textcite{gelman2017conceptualhmc}.
+	\end{minipage}
+	
+	\label{fig:6}
+\end{figure}
+
+
+\section{Métricas de Evaluación}
+
+\subsection{Métricas de Convergencia}
+
+\subsubsection{R hat}
+
+Llamado también como estadístico Gelman-Rubin, es una medida utilizada para evaluar la convergencia de las simulaciones de Cadenas de Markov Monte Carlo (MCMC). El estadístico R-hat compara las estimaciones entre y dentro de las cadenas para los parámetros del modelo. Cuando las cadenas no se han mezclado bien; es decir, que las estimaciones entre y dentro de las cadenas no coinciden el estadístico es mayor que 1(no convergen). Idealmente, R-hat debería aproximarse a 1, lo que indica que todas las cadenas se basan en la misma distribución subyacente. 
+
+\subsubsection{Fracción bayesiana estimada de información faltante (BFMI)}
+
+Un criterio que en la práctica pueda usando la propia cadena de Markov Hamiltoniana estimar de manera sencilla es la fracción bayesiana de información faltante (BFMI). Esta estadística cuantifica cuan insuficiente es la variación de energía incluida por el remuestreo de momentos. Un valor de BFMI que tienda a cero indica una exploración muy lenta, mientras que un valor de BFMI que tienda a 1 indica que el remuestreo de momentos genera efectivamente muestras exactas de la distribución marginal de energía \parencite{gelman2025bayesian}. Independientemente del medio computacional que se utilice para calcular el BFMI se a establecido un umbral de $0.3$, por debajo de este umbral se concluye que el muestreo es ineficiente.
+
+\subsection{Métricas de Incertidumbre}
+
+\subsubsection{Intervalos de Credibilidad}
+
+Es una media estadifica cuya finalidad es cuantificar la variabilidad o incertidumbre de un parámetro estimado; en otras palabras, los intervalos de credibilidad representan la probabilidad de que un parámetro se encuentre en un rango especifico dado los datos observados y una distribución previa. Entendámoslo con el siguiente ejemplo. Supongamos que se estimó un parámetro $\beta$ y su distribución posterior es una distribución normal $\beta \sim N(5,1)$ (Figura~\ref{fig:7}):
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalo de Credibilidad.}
+	\includegraphics[width=0.6\textwidth]{Imagen 7.png}
+	\label{fig:7}
+\end{figure}
+
+El área sombreada en azul representa el intervalo de credibilidad del $95\%$: el rango donde, dados los datos, hay un $95\%$ de probabilidad de que esté el valor verdadero de $\beta$.
+
+\subsection{Métricas de Predicción}
+
+\subsubsection{Error Cuadrático Medio}
+
+En modelos de predicción como lo es la regresión, el error cuadrático medio (MSE) es una métrica que evalúa la calidad predictiva de los modelos, mediante la cuantificación de la cercanía entre los valores reales $y$ predichos. Dado un vector de predicciones $y$ y $\hat{y}$ las predicciones correspondientes de la variable dependiente, se define el error cuadrático medio (MSE) como: 
+
+\begin{equation} \label{ec:mape}
+	\mathrm{MSE} = \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2
+\end{equation}
+
+El MSE mide el promedio de los errores al cuadrado, penalizando de manera más severa aquellos con grandes errores, un MSE bajo indica que, en promedio, las predicciones del modelo están cerca de los valores reales.
+
+\subsubsection{Raíz del Error cuadrático Medio}
+
+Se define como:
+
+\begin{equation} \label{ec:32}
+	\mathrm{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2 }
+\end{equation}
+
+El RMSE tiene la ventaja de estar en las mismas unidades que la variable respuesta, lo cual ayuda a la interpretación: un RMSE de 10 unidades indica que las predicciones tienen a desviarse en promedio 10 unidades respecto a los valores reales.
+
+\subsubsection{Error Porcentual Absoluto Medio}
+Es una métrica que se utiliza para evaluar la precisión predictiva, es facíl de interpretar ya que expresa el error en terminos porcentuales.
+\begin{equation} \label{ec:mape}
+	\text{MAPE} = \frac{1}{n} \sum_{i=1}^{n} \left| \frac{y_i - \hat{y}_i}{y_i} \right| \times 100
+\end{equation}
+
+\subsubsection{Criterio de Información de Watanabe-Akaike}
+
+El criterio de información de Watanabe-Akaike (WAIC) o llamado también Criterio de información ampliamente aplicable es un enfoque bayesiano del conocido AIC, cuya utilidad es estimar la expectativa fuera de una muestra, comenzando con el cálculo de la densidad predictiva posterior puntual logarítmica y luego añadiendo una corrección por el numero efectivo de parámetros para ajustar el sobreajuste. El ajuste se interpreta como una aproximación al número de parámetros no restringidos en un modelo, comparado con el AIC, WAIC tiene como propiedad principal de promediar sobre la distribución posterior en lugar de estar condicionado a una estimación puntual. El uso de este criterio es importante en el contexto predictivo de un modelo, puesto que WAIC evalúa las predicciones que verdaderamente se están utilizando para nuevos datos \parencite{gelman2013predictive}. 
+
+\subsection{Bondad de Ajuste}
+\subsubsection{Coeficiente de Determinación Bayesiano}
+
+\textcite{gelman2018rsquared} propusieron una definición de Coeficiente de Determinación $(R^2)$ adaptada a modelos de regresión bayesiana, adecuada para evaluaciones basadas en simulaciones posteriores. Esto debido a que en el enfoque bayesiano se busca reflejar la incertidumbre posterior de los coeficientes, lo que posiblemente podría eliminar o reducir el sobreajuste que presenta el método de mínimos cuadrados. El coeficiente de determinación bayesiano estará definido como:
+
+\begin{equation} \label{ec:33}
+	R_B^2 = \frac{ \operatorname{Var}_{n=1}^N \left( \hat{y}_n^{\text{pred}_s} \right) }
+	{ \operatorname{Var}_{n=1}^N \left( \hat{y}_n^{\text{pred}_s} \right) + \operatorname{var}_{\text{res}}^s }, \quad R_B^2 \in [0, 1]
+\end{equation}
+
+Donde:
+\begin{itemize}
+	\item \( \hat{y}_n^{\text{pred}_s} \) son los valores predichos en la muestra \( s \),
+	\item \( \operatorname{Var}_{n=1}^N \left( \hat{y}_n^{\text{pred}_s} \right) \) es la varianza explicada en la muestra \( s \),
+	\item \( \operatorname{var}_{\text{res}}^s \) es la varianza residual no explicada en la muestra \( s \).
+\end{itemize}
+
+
+\section{Implementación Computacional}
+\subsection{PyMC}
+
+PyMC es una librería de programación probabilística para Python en la cual se puede construir y ajustar modelos bayesianos, una ventaja importante es su sintaxis intuitiva y legible, similar a la sintaxis que utilizan los estadísticos para describir modelos. PyMC admite varios modelos estadísticos, como regresión lineal jerárquica generalizada, clasificación, series temporales, ecuaciones diferenciales ordinarias y modelos no paramétricos como procesos gaussianos. La librería incorpora muestreo basado en gradientes como lo es Hamilton Monte Carlo (HMC) acelerando los cálculos y asegurando robustez en los modelos \parencite{abrilpla2023pymc}. 
+
+PyMC construye un grafo computacional lo que permite tener un acceso a la estructura del modelo de forma directa, a diferencia de librerías de Stan que también es utilizado para la inferencia bayesiana pero con la diferencia que este compila el modelo directamente en C++ como una función de densidad logarítmica, proporcionando así una ejecución limitada ante la dinámica estructural del modelo por lo que en cuanto a tiempos de ejecución PyMC resulta más eficiente reduciendo así la carga computacional.
+
+Un ejemplo básico (\ref{ec:34},\ref{ec:35}) de cómo se define un modelo con relación funcional lineal en PyMC:
+
+\begin{equation} \label{ec:34}
+	y_i \sim \mathcal{N}(\mu_i, \sigma)
+\end{equation}
+
+\begin{equation} \label{ec:35}
+	\mu_i = \alpha + \beta x_i
+\end{equation}
+
+\begin{verbatim}  
+	with pm.Model() as model:
+	# 1. Priors
+	alpha = pm.Normal('alpha', mu=0, sigma=10)  # Prior para intercepto
+	beta = pm.Normal('beta', mu=0, sigma=10)    # Prior para pendiente
+	sigma = pm.HalfNormal('sigma', sigma=1)     # Prior para la std
+	
+	# 2. Transformaciones
+	mu = alpha + beta * x                       # Recta
+	
+	# 3. Likelihood y 4. Datos observados
+	y_obs = pm.Normal('y_obs', mu=mu, sigma=sigma, observed=y_data)
+	
+	trace = pm.sample(2000, tune=1000, target_accept=0.9,return_inferencedata=True, random_seed=123)
+\end{verbatim}
+
+Desagregando las funciones con sus parámetros el modelo del ejemplo esta compuesto de la siguiente manera.	
+
+\textbf{Prioris:} \verb|pm.Normal(nombre, mu, sigma)|
+
+\begin{itemize}
+	\item \texttt{nombre}: identificador del parámetro en el modelo.
+	\item \texttt{mu}: media de la distribución normal.
+	\item \texttt{sigma}: desviación estándar de la distribución normal.
+	\item \texttt{alpha}: intercepto.
+	\item \texttt{beta}: pendiente.
+\end{itemize}
+
+\textbf{Verosimilitud (Likelihood):} \verb|pm.Normal(nombre, mu, sigma, observed=y_data)|
+
+\begin{itemize}
+	\item \texttt{nombre}: etiqueta de la variable observada.
+	\item \texttt{mu}: media de la distribución para cada observación.
+	\item \texttt{sigma}: desviación estándar para todas las observaciones.
+	\item \texttt{observed}: los datos reales.
+\end{itemize}
+
+\textbf{Muestreo:}
+
+\verb|pm.sample()| es una función para realizar muestreo MCMC de la distribución posterior del modelo.
+
+\begin{itemize}
+	\item \texttt{2000}: número de muestras que se guardarán después del calentamiento.
+	\item \texttt{tune=1000}: número de iteraciones de calentamiento (no se guardan).
+	\item \texttt{target\_accept=0.9}: tasa de aceptación objetivo.
+	\item \texttt{return\_inferencedata=True}: permite realizar análisis posteriores con ArviZ.
+	\item \texttt{random\_seed=123}: semilla de aleatoriedad.
+\end{itemize}
+
+\textit{Un \texttt{target\_accept} más alto $(> 0.8)$ es recomendado cuando los datos o el modelo pueden tener geometrías complicadas \parencite{betancourt2017conceptual}.}
+
+	
+	\chapter{Metodología}
+Un primer abordaje analítico es el análisis exploratorio de datos (AED) de la base de datos alojada en el sitio Physionet (\url{ https://physionet.org/content/ecgrdvq/1.0.0/}), específicamente el cálculo de medidas de tendencia central y dispersión. A partir de estos, se obtiene una orientación preliminar respecto a la asignación de las distribuciones \textit{a priori} \parencite{gelman2025bayesian}. Posteriormente, se analiza la relación existente entre la duración del intervalo QT y sus covariables, ampliando así el panorama de eficacia del modelo jerárquico bayesiano de regresión.
+
+
+Una vez comprendida y sintetizada la información proporcionada por el AED, se construye un modelo base con las respectivas distribuciones para los parámetros, permitiendo así predecir la duración del intervalo QT (variable dependiente o respuesta) mediante covariables electrocardiográficas y clínicas. A partir de este modelo base, se procede a incorporar progresivamente nuevas variables y evaluar su desempeño general, tal como lo recomienda \textcite{mcelreath2020statrethinking}.
+
+Tras identificar el modelo más robusto mediante métricas de convergencia, predicción e incertidumbre, se implementa en una aplicación Shiny que permite predecir el intervalo QT a partir del ingreso de nuevos datos. La idea es: una vez cargada la información, la app devolverá una estimación clara y realmente útil del QT, sin vueltas ni complicaciones innecesarias. La intención es que se sienta amigable para quien no pertenezca al área técnica.
+
+El desarrollo computacional de los modelos jerárquicos bayesianos de regresión se ha realizado en el lenguaje de programación \texttt{Python}, utilizando la librería \texttt{PyMC}. En términos prácticos, esto aporta una base sólida, flexible y escalable para modelar la variabilidad entre individuos y, al mismo tiempo, capturar la estructura global de los datos. Así, se respeta lo particular de cada sujeto —porque no todos se comportan igual— sin perder consistencia en la inferencia global.
+
+La librería \texttt{PyMC} contiene el algoritmo Hamilton Monte Carlo (HMC) para estimar parámetros mediante el método numérico \textit{Leapfrog} para resolver, las ecuaciones diferenciales. El HMC permite recorrer el espacio de parámetros de manera eficiente, evitando exploraciones lentas o poco informativas, mientras que \textit{Leapfrog} se encarga de calcular los avances numéricos con buena estabilidad, lo que hace que el muestreo sea más confiable. Así, además de generar predicciones, el modelo mantiene una de las principales ventajas del enfoque bayesiano: representar explícitamente la incertidumbre de las estimaciones, en lugar de reducirla a un único valor puntual.
+
+Dado que la implementación de algoritmos MCMC implica un elevado costo computacional \parencite{salvatier2016pymc3}, la ejecución se llevó a cabo en un supercomputador de alto rendimiento de 128 núcleos de CPU y 256 GB de memoria RAM. Esto permitió asegurar que no existieran limitaciones en el número de simulaciones, favoreciendo la convergencia de las cadenas y la obtención de resultados precisos y confiables \parencite{brooks2011mcmc}. De darse el caso de no disponer de un supercomputador, se tendría que reducir tanto el número de iteraciones, así como el número de cadenas, lo cual podría comprometer la convergencia del modelo, además de afectar la eficiencia de los estimadores y mantener tiempos largos de ejecución. 
+
+
+El uso de modelos jerárquicos bayesianos, apoyado en herramientas computacionales avanzadas, permite describir con mayor fidelidad la dinámica del intervalo QT, combinando información clínica con señales fisiológicas complejas obtenidas de los electrocardiogramas. Una fortaleza clave de este enfoque es que no se restringe a caracterizar un promedio poblacional, sino que incorpora explícitamente la heterogeneidad entre individuos y, a la vez, las variaciones dentro de un mismo paciente a lo largo del tiempo.
+
+Bajo esta perspectiva, el modelo ofrece un marco consistente tanto para la predicción a nivel individual como para la evaluación del efecto farmacológico. En términos aplicados, permite estimar cómo podría evolucionar el QT en un paciente concreto —considerando sus particularidades— y, simultáneamente, atribuir con mayor claridad la parte de la respuesta que puede asociarse al fármaco. Como resultado, se favorecen predicciones más ajustadas y una interpretación más coherente del comportamiento del QT.
+
+	\chapter{Construcción de los Modelos Bayesianos De Regresión}
+
+%\section{Análisis Exploratorio de Datos}
+
+\section{Análisis Univariado }
+\subsection{Análisis de valores Faltantes}
+
+La ausencia de valores en un conjunto de datos es una problemática común en el análisis estadístico. Por ello, identificar porcentualmente (Tabla~\ref{tab:1}) estos datos faltantes permiten aplicar la estrategia adecuada para obtener los mejores resultados. Además, es importante conocer el tipo de variable con la que se está trabajando, ya que, en caso de ser necesaria una imputación, esta deberá realizarse mediante técnicas apropiadas según el tipo de dato.
+
+\begin{table}[H]
+	\centering
+	\caption{Resumen de valores faltantes por variable}
+	\begin{tabularx}{\textwidth}{l*{10}{>{\centering\arraybackslash}X}}
+		\toprule
+		\textbf{Variable} & \textbf{Tipo} & \textbf{Nulos (\#)} & \textbf{Completos (\#)} & \textbf{Total} & \textbf{\% Missing} \\
+		\midrule
+		dosis & float64 & 1056 & 4176 & 5232 & 20.20 \\
+		asimetría onda T & float64 & 129 & 5103 & 5232 & 2.50 \\
+		QT & float64 & 13 & 5219 & 5232 & 0.20 \\
+		JT & float64 & 9 & 5223 & 5232 & 0.20 \\
+		sexo & object & 0 & 5232 & 5232 & 0.00 \\
+		edad & int64 & 0 & 5232 & 5232 & 0.00 \\
+		presión sistólica & float64 & 0 & 5232 & 5232 & 0.00 \\
+		presión diastólica & float64 & 0 & 5232 & 5232 & 0.00 \\
+		tratamiento & object & 0 & 5232 & 5232 & 0.00 \\
+		RR & int64 & 0 & 5232 & 5232 & 0.00 \\
+		\bottomrule
+	\end{tabularx}
+	
+	\vspace{2mm}
+	\begin{minipage}{\textwidth}
+		\small \textit{Nota.} El $20.20 \%$ de los datos faltantes en la variable dosis corresponde a los pacientes que no recibieron tratamiento por lo cual no registran una dosificación.
+	\end{minipage}
+	
+	\label{tab:1}
+\end{table}
+
+
+
+
+%\begin{table}[H]
+%	\centering
+%	\caption{Resumen de corregido valores faltantes}
+%	\begin{tabularx}{\textwidth}{l*{5}{>{\centering\arraybackslash}X}}
+%		\toprule
+%		\textbf{Variable} & \textbf{Tipo} & \textbf{Nulos (\#)} & \textbf{Completos (\#)} & \textbf{Total} & \textbf{\% Missing} \\
+%		\midrule
+%		dosis & float64 & 0 & 5232 & 5232 & 0.000000 \\
+%		asimetría onda T & float64 & 0 & 5232 & 5232 & 0.000000 \\
+%		QT & float64 & 0 & 5232 & 5232 & 0.000000 \\
+%		JT & float64 & 0 & 5232 & 5232 & 0.000000 \\
+%		sexo & object & 0 & 5232 & 5232 & 0.000000 \\
+%		edad & int64 & 0 & 5232 & 5232 & 0.000000 \\
+%		presión sistólica & float64 & 0 & 5232 & 5232 & 0.000000 \\
+%		presión diastólica & float64 & 0 & 5232 & 5232 & 0.000000 \\
+%		tratamiento & object & 0 & 5232 & 5232 & 0.000000 \\
+%		RR & int64 & 0 & 5232 & 5232 & 0.000000 \\
+%		\bottomrule
+%	\end{tabularx}
+%	\label{tab:2}
+%\end{table}
+
+
+\subsection{Medidas estadísticas}
+
+El análisis estadístico presentado en la Tabla~\ref{tab:3} muestra que la dosis promedio administrada es de 632.64 mg, aunque con una variabilidad considerable entre observaciones. En cuanto a la asimetría de la onda T, se observa un valor medio de 0.22; sin embargo, en los casos más extremos alcanza 0.56, lo que podría ser consistente con alteraciones en la repolarización ventricular. Por su parte, los intervalos QT y JT registran medias de 399.63 ms y 220.51 ms, respectivamente, valores que en general se sitúan dentro de rangos esperados, aunque la presencia de máximos elevados sugiere que existen registros puntuales que superan los límites habituales y merecen una revisión clínica o metodológica (por ejemplo, condiciones del registro, calidad de señal o características específicas del paciente). En cuanto a la presión arterial, los promedios registrados (107.17/59.75 mmHg) se sitúan en un rango normal-bajo, sin evidencia de hipertensión predominante
+
+\begin{table}[H]
+	\centering
+	\caption{Resumen estadístico de variables numéricas}
+	\begin{tabularx}{\textwidth}{l*{8}{>{\centering\arraybackslash}X}}
+		\toprule
+		& \textbf{dosis} & \textbf{asimetría onda T} & \textbf{QT} & \textbf{JT} & \textbf{edad} & \textbf{presión sistólica} & \textbf{presión diastólica} & \textbf{RR} \\
+		\midrule
+		\textbf{casos} & 5232.00 & 5232.00 & 5232.00 & 5232.00 & 5232.00 & 5232.00 & 5232.00 & 5232.00 \\
+		\textbf{media} & 632.64 & 0.22 & 399.63 & 220.51 & 26.97 & 107.17 & 59.75 & 953.86 \\
+		\textbf{std} & 467.87 & 0.18 & 33.59 & 28.60 & 5.36 & 8.28 & 7.04 & 140.08 \\
+		\textbf{min} & 120.00 & 0.00 & 325.00 & 132.00 & 19.00 & 92.00 & 51.75 & 618.00 \\
+		\textbf{25\%} & 400.00 & 0.12 & 375.00 & 199.00 & 21.00 & 102.50 & 55.75 & 850.00 \\
+		\textbf{50\%} & 500.00 & 0.17 & 396.00 & 219.00 & 27.00 & 106.00 & 57.00 & 942.00 \\
+		\textbf{75\%} & 632.64 & 0.24 & 418.00 & 239.00 & 32.00 & 114.25 & 62.75 & 1058.00 \\
+		\textbf{max} & 1500.00 & 1.56 & 579.00 & 360.00 & 35.00 & 123.25 & 84.00 & 1528.00 \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:3}
+\end{table}
+
+
+\subsection{Pruebas de Bondad de Ajuste}
+
+Identificar la forma en que se distribuye la variable dependiente es fundamental para la definición de los modelos jerárquicos bayesianos de regresión. Para ello, se utilizará la prueba de Shapiro-Wilk, bajo las siguientes hipótesis:
+
+\begin{align*}
+	H_0 &: QT \sim \mathcal{N}(\mu, \sigma^2) \\
+	H_1 &: QT \not\sim \mathcal{N}(\mu, \sigma^2)
+\end{align*}
+
+La prueba de Shapiro-Wilk arrojó un p-valor de 0.21, el cual es mayor al nivel de significancia de 0.05. Por lo tanto, no se rechaza la hipótesis nula, concluyéndose que la variable duración del intervalo QT podría considerarse normalmente distribuida.
+
+\section{Análisis Multivariado}
+
+La Tabla~\ref{tab:4} muestra las medidas estadísticas de la media y la desviación estándar según el tratamiento recibido. La Dofetilida y la Quinidina presentan valores promedio más altos del intervalo QT, lo que indica una evidente prolongación de dicho intervalo. La Ranolazina y el Verapamilo, en cambio, muestran efectos intermedios. La Tabla~\ref{tab:5} indica que la Dofetilida y la Quinidina tienen valores promedio elevados en ambos sexos, con una ligera ventaja en los hombres. En cambio, la Ranolazina y el Verapamil presentan mínimas diferencias entre ambos sexos. En general, se observa una tendencia a valores más elevados del intervalo QT en los hombres.
+
+
+\begin{table}[H]
+	\centering
+	\caption{Estadísticas descriptivas del intervalo QT por tratamiento}
+	\begin{tabularx}{\textwidth}{l*{3}{>{\centering\arraybackslash}X}}
+		\toprule
+		\textbf{Tratamiento} & \textbf{media} & \textbf{std} & \textbf{casos} \\
+		\midrule
+		Dofetilida & 421.78 & 38.79 & 1056 \\
+		Placebo & 382.37 & 22.89 & 1056 \\
+		Quinidina & 421.46 & 33.24 & 1008 \\
+		Ranolazina & 389.31 & 20.63 & 1056 \\
+		Verapamilo & 384.24 & 22.32 & 1056 \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Promedio del intervalo QT por tratamiento y sexo}
+	\begin{tabularx}{\textwidth}{l*{2}{>{\centering\arraybackslash}X}}
+		\toprule
+		\textbf{Tratamiento} & \textbf{Mujer (F)} & \textbf{Hombre (M)} \\
+		\midrule
+		Dofetilida & 417.1 & 426.5 \\
+		Placebo & 379.4 & 385.3 \\
+		Quinidina & 418.9 & 424.0 \\
+		Ranolazina & 390.0 & 388.6 \\
+		Verapamilo & 380.5 & 387.9 \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:5}
+\end{table}
+
+
+\subsection{Correlación De Pearson}
+
+El mapa de correlaciones (Figura~\ref{tab:4}) muestra las relaciones lineales entre las variables. Se identifica una correlación positiva marcada entre los intervalos QT y JT; esto implica que, en general, incrementos en QT suelen acompañarse de incrementos en JT, y reducciones en uno tienden a reflejarse en el otro. En términos prácticos, ambos intervalos muestran un comportamiento altamente sincronizado, lo que sugiere que comparten una estructura temporal o fisiológica común en la señal.
+
+De manera análoga, se aprecia una asociación positiva elevada entre las variables de presión, lo que indica que tienden a variar en el mismo sentido. Cuando una presión aumenta, la otra suele aumentar, y cuando una desciende, la otra también tiende a disminuir. En conjunto, este patrón sugiere que no se trata de variables independientes, sino de medidas que capturan fenómenos relacionados y cuyo movimiento conjunto se expresa en la consistencia observada en los datos.
+
+Finalmente, tanto el intervalo QT como el JT muestran una correlación negativa respecto a la presión sistólica. En términos prácticos, cuando la presión sistólica es más alta, suele verse una reducción en la duración de estos intervalos. Es un patrón interesante y consistente: mayor presión sistólica, intervalos algo más cortos.
+
+\begin{figure}[H]
+	\centering
+	\caption{Mapa de correlaciones.}
+	\includegraphics[width=0.9\textwidth]{Imagen 8.png}
+	\label{fig:8}
+\end{figure}
+
+
+
+
+\section{Propuesta de Modelos }
+
+\subsection{Determinación de la distribución priori }
+
+A partir de la información obtenida por el análisis univariado, el análisis multivariado y de la literatura médica, se especifica una distribución a priori para el parámetro de desviación estándar del error como $\sigma \sim HalfNormal(10)$, esta elección evita valores extremos asi como dispersión, ya que el intervalo QT varia entre 350 ms y 500 ms  con un rango aproximado de 150 ms. Una distribución HalfNormal asegura que $\sigma>0$. En cuanto a las prioris jerárquica de los tratamientos, $\mu_\beta \sim Normal(0,10)$ no asume un efecto positivo ni negativo por lo que se tiene gran flexibilidad, $\sigma_\beta$ se encarga de las posibles diferencias entre tratamientos por ejemplo de 10 a 15 ms. Para los efectos fijos $\theta_j$ el aumento en cada unidad de medida produce cambios en el intervalo QT de $\pm2$ ms es decir $2\sigma$, esto permite que el modelo efectos eficientemente, por ejemplo, un año más de edad cambia el intervalo QT entre -2 y +2 ms. 
+
+
+\subsection{Modelo Base }
+
+Sea \( Y_i \) la variable dependiente; es decir, \( Y_i = QT_i \), donde \( QT_i \) es el intervalo QT para cada observación \( i = \{1, 2, \ldots, N\} \), además definimos (\ref{ec:36}).
+
+\begin{equation} \label{ec:36}
+	Y_i \sim \mathcal{N}(\mu_i, \sigma)
+\end{equation}
+
+Con
+
+\begin{equation} \label{ec:37}
+	\mu_i = \beta^{\text{tratamiento}}_{g[i]} + \gamma^{\text{sexo}}_{s[i]} + \sum_{j=1}^{p} \theta_j X_{ij}
+\end{equation}
+
+Donde $g[i]$ es el índice del tratamiento para el individuo $i$, $s[i]$ es el índice del sexo para el individuo $i$, $X_{ij}$ son las covariables continuas y $p$ es el número total de covariables continuas.
+
+Se define las prioris jerárquicas para los efectos aleatorios del tratamiento como:
+
+\begin{equation} \label{ec:38}
+	\beta^{\text{tratamiento}}_{g[i]} \sim \mathcal{N}(\mu_\beta, \sigma_\beta), \quad k = 1, 2, \ldots, K
+\end{equation}
+
+Donde \( K \) es el número de tratamientos y $\mu_\beta \sim \mathcal{N}(0, 10), \quad \sigma_\beta \sim \text{HalfNormal}(5)$
+son los hiperparámetros. Mientras que al sexo como:
+
+\begin{equation} \label{ec:39}
+	\gamma^{\text{sexo}}_{g[i]} \sim \mathcal{N}(\mu_\gamma, \sigma_\gamma), \quad l = 1, 2, \ldots, L
+\end{equation}
+
+Donde \( L \) es el número de categorías de la variable sexo y $
+\mu_\gamma \sim \mathcal{N}(0, 10), \quad \sigma_\gamma \sim \text{HalfNormal}(5)$ son los hiperparámetros.
+
+Ahora definiéremos las prioris jerárquicas para los efectos fijos de las covariables. Para cada covariable continua $j\in{1,2,…,p}$ se tiene $\theta_j \sim \mathcal{N}(0, 1)$, en particular para este modelo que lo llamaremos modelo base con covariables: edad, intervalo RR, presión sistólica. 
+
+Es decir, podemos escribir de manera general como: 
+
+\begin{equation} \label{ec:40}
+	QT_i \sim \mathcal{N} \left( 
+	\beta^{\text{tratamiento}}_{g[i]} + \gamma^{\text{sexo}}_{s[i]} + \sum_{j=1}^{p} \theta_j X_{ij},\ \sigma 
+	\right), \quad \sigma \sim \text{HalfNormal}(10)
+\end{equation}
+
+Entonces el \textit{modelo base} (\ref{ec:41}) con el que se trabajara de aquí en adelante esta formulado como:
+
+\begin{equation} \label{ec:41}
+	\begin{aligned}
+		Y_i &\sim \mathcal{N}(\mu_i, \sigma) \\\\
+		\mu_i &= \beta^{\text{tratamiento}}_{g[i]} + \gamma^{\text{sexo}}_{s[i]} 
+		+ \theta_{\text{edad}} \cdot \text{edad}_i 
+		+ \theta_{\text{RR}} \cdot \text{RR}_i 
+		+ \theta_{\text{presión\_sistólica}} \cdot \text{presión\_sistólica}_i \\\\
+		\beta_k^{\text{tratamiento}} &\sim \mathcal{N}(\mu_\beta, \sigma_\beta), \quad
+		\mu_\beta \sim \mathcal{N}(0, 10), \quad \sigma_\beta \sim \text{HalfNormal}(5) \\\\
+		\gamma_l^{\text{sexo}} &\sim \mathcal{N}(\mu_\gamma, \sigma_\gamma), \quad
+		\mu_\gamma \sim \mathcal{N}(0, 10), \quad \sigma_\gamma \sim \text{HalfNormal}(5) \\\\
+		\theta_j &\sim \mathcal{N}(0, 1), \quad \forall j \in \{ \text{edad}, \text{RR}, \text{presión sistólica} \} \\\\
+		\sigma &\sim \text{HalfNormal}(10)
+	\end{aligned}
+\end{equation}
+
+\subsection{Modelo base + asimetría de onda T } 
+\begin{equation} \label{ec:42}
+	\resizebox{\textwidth}{!}{$
+		\begin{aligned}
+			Y_i &\sim \mathcal{N}(\mu_i, \sigma) \\\\
+			\mu_i &= \beta^{\text{tratamiento}}_{g[i]} 
+			+ \gamma^{\text{sexo}}_{s[i]} 
+			+ \theta_{\text{edad}} \cdot \text{edad}_i 
+			+ \theta_{\text{RR}} \cdot \text{RR}_i \\\\
+			&\quad + \theta_{\text{presión\_sistólica}} \cdot \text{presión\_sistólica}_i 
+			+ \theta_{\text{asimetría\_onda\_T}} \cdot \text{asimetría\_onda\_T}_i \\\\
+			\beta_k^{\text{tratamiento}} &\sim \mathcal{N}(\mu_\beta, \sigma_\beta), \quad
+			\mu_\beta \sim \mathcal{N}(0, 10), \quad \sigma_\beta \sim \text{HalfNormal}(5) \\\\
+			\gamma_l^{\text{sexo}} &\sim \mathcal{N}(\mu_\gamma, \sigma_\gamma), \quad
+			\mu_\gamma \sim \mathcal{N}(0, 10), \quad \sigma_\gamma \sim \text{HalfNormal}(5) \\\\
+			\theta_j &\sim \mathcal{N}(0, 1), \quad 
+			\forall j \in \{ \text{edad}, \text{RR}, \text{presión sistólica}, \text{asimetría onda T} \} \\\\
+			\sigma &\sim \text{HalfNormal}(10)
+		\end{aligned}
+		$}
+\end{equation}
+
+
+\subsection{Modelo base + asimetría de onda T + JT }
+
+\begin{equation} \label{ec:43}
+	\resizebox{\textwidth}{!}{$
+		\begin{aligned}
+			Y_i &\sim \mathcal{N}(\mu_i, \sigma) \\\\
+			\mu_i &= \beta^{\text{tratamiento}}_{g[i]} 
+			+ \gamma^{\text{sexo}}_{s[i]} 
+			+ \theta_{\text{edad}} \cdot \text{edad}_i 
+			+ \theta_{\text{RR}} \cdot \text{RR}_i \\\\
+			&\quad + \theta_{\text{presión\_sistólica}} \cdot \text{presión\_sistólica}_i 
+			+ \theta_{\text{asimetría\_onda\_T}} \cdot \text{asimetría\_onda\_T}_i 
+			+ \theta_{\text{JT}} \cdot \text{JT}_i \\\\
+			\beta_k^{\text{tratamiento}} &\sim \mathcal{N}(\mu_\beta, \sigma_\beta), \quad
+			\mu_\beta \sim \mathcal{N}(0, 10), \quad \sigma_\beta \sim \text{HalfNormal}(5) \\\\
+			\gamma_l^{\text{sexo}} &\sim \mathcal{N}(\mu_\gamma, \sigma_\gamma), \quad
+			\mu_\gamma \sim \mathcal{N}(0, 10), \quad \sigma_\gamma \sim \text{HalfNormal}(5) \\\\
+			\theta_j &\sim \mathcal{N}(0, 1), \quad 
+			\forall j \in \{ \text{edad}, \text{RR}, \text{presión sistólica}, \text{asimetría onda T}, \text{JT} \} \\\\
+			\sigma &\sim \text{HalfNormal}(10)
+		\end{aligned}
+		$}
+\end{equation}
+
+
+\subsection{Modelo base + asimetría de onda T + JT+ dosis }
+
+\begin{equation} \label{ec:44}
+	\resizebox{\textwidth}{!}{$
+		\begin{aligned}
+			Y_i &\sim \mathcal{N}(\mu_i, \sigma) \\\\
+			\mu_i &= \beta^{\text{tratamiento}}_{g[i]} 
+			+ \gamma^{\text{sexo}}_{s[i]} 
+			+ \theta_{\text{edad}} \cdot \text{edad}_i 
+			+ \theta_{\text{RR}} \cdot \text{RR}_i 
+			+ \theta_{\text{presión\_sistólica}} \cdot \text{presión\_sistólica}_i \\\\
+			&\quad + \theta_{\text{asimetría\_onda\_T}} \cdot \text{asimetría\_onda\_T}_i 
+			+ \theta_{\text{JT}} \cdot \text{JT}_i 
+			+ \theta_{\text{dosis}} \cdot \text{dosis}_i \\\\
+			\beta_k^{\text{tratamiento}} &\sim \mathcal{N}(\mu_\beta, \sigma_\beta), \quad
+			\mu_\beta \sim \mathcal{N}(0, 10), \quad \sigma_\beta \sim \text{HalfNormal}(5) \\\\
+			\gamma_l^{\text{sexo}} &\sim \mathcal{N}(\mu_\gamma, \sigma_\gamma), \quad
+			\mu_\gamma \sim \mathcal{N}(0, 10), \quad \sigma_\gamma \sim \text{HalfNormal}(5) \\\\
+			\theta_j &\sim \mathcal{N}(0, 1), \quad 
+			\forall j \in \{ \text{edad}, \text{RR}, \text{presión sistólica}, \text{asimetría onda T}, \text{JT}, \text{dosis} \} \\\\
+			\sigma &\sim \text{HalfNormal}(10)
+		\end{aligned}
+		$}
+\end{equation}
+
+\subsection{Modelo base + asimetría de onda T + JT+ dosis+ presión diastólica}
+
+\begin{equation} \label{ec:45}
+	\resizebox{\textwidth}{!}{$
+		\begin{aligned}
+			Y_i &\sim \mathcal{N}(\mu_i, \sigma) \\\\
+			\mu_i &= \beta^{\text{tratamiento}}_{g[i]} 
+			+ \gamma^{\text{sexo}}_{s[i]} 
+			+ \theta_{\text{edad}} \cdot \text{edad}_i 
+			+ \theta_{\text{RR}} \cdot \text{RR}_i 
+			+ \theta_{\text{presión\_sistólica}} \cdot \text{presión\_sistólica}_i \\\\
+			&\quad + \theta_{\text{presión\_diastólica}} \cdot \text{presión\_diastólica}_i 
+			+ \theta_{\text{asimetría\_onda\_T}} \cdot \text{asimetría\_onda\_T}_i 
+			+ \theta_{\text{JT}} \cdot \text{JT}_i 
+			+ \theta_{\text{dosis}} \cdot \text{dosis}_i \\\\
+			\beta_k^{\text{tratamiento}} &\sim \mathcal{N}(\mu_\beta, \sigma_\beta), \quad
+			\mu_\beta \sim \mathcal{N}(0, 10), \quad \sigma_\beta \sim \text{HalfNormal}(5) \\\\
+			\gamma_l^{\text{sexo}} &\sim \mathcal{N}(\mu_\gamma, \sigma_\gamma), \quad
+			\mu_\gamma \sim \mathcal{N}(0, 10), \quad \sigma_\gamma \sim \text{HalfNormal}(5) \\\\
+			\theta_j &\sim \mathcal{N}(0, 1), \quad 
+			\forall j \in \{ \text{edad}, \text{RR}, \text{presión sistólica}, \text{presión diastólica}, \text{asimetría onda T}, \text{JT}, \text{dosis} \} \\\\
+			\sigma &\sim \text{HalfNormal}(10)
+		\end{aligned}
+		$}
+\end{equation}
+
+El conjunto de entrenamiento corresponde al $80\%$ del total de los datos, mientras que el conjunto de prueba el $20\%$ restante. En cuanto al número de muestras de la distribución posterior se ha asignado 1000 muestras, mientras que el número de muestras de ajuste igualmente es de 1000, para las cadenas, convencionalmente se recomienda el uso de 4 cadenas. 
+
+	
+	\chapter{Resultados}
+A continuación, se presentan los resultados obtenidos de los modelos mencionados anteriormente. Cabe tomar en cuenta la siguiente codificación para la interpretación: 0-Dofetilida, 1-Placebo, 2-Quinidina, 3-Ranolazina y 4-Verapamilo. Además, 0-Femenino y 1-Maculino. Finalmente, en los parámetros asociados a variables categóricas, el gráfico de traza se muestra en un solo panel que superpone las trayectorias de todas las categorías y de todas las cadenas. 
+
+\section{Estimación de Parámetro}
+\subsection{Modelo 1 (\ref{ec:41})}
+
+De la tabla \ref{tab:m1t1} podemos concluir gracias al $r_hat$  que todas las cadenas están mezcladas; es decir existe convergencia. La figura \ref{fig:m1f1} muestra el intervalo de credibilidad al $94\%$, si el cero no está incluido, es significativo el efecto (parámetro), entonces se puede concluir que el intervalo RR no tiene un efecto relevante al igual que la presión sistólica. La figura \ref{fig:m1f2} indica el ROPE, el cual es un intervalo alrededor del cero el cual permite complementar la idea de efectos significantes, si menos del $5\%$ de la distribución está dentro de $[-1,1]$, el efecto es diferente de 0, entonces confirmamos que el intervalo RR y la presión sistólica no son significativos. Respecto a los tratamientos, Dofetilida, Quinidina (tratamiento más potente), Ranolazina y Verapamilo presentan efectos significativamente positivos, en contraste con el placebo, cuyo efecto es nulo. Puesto que el tratamiento con Quinidina es el que tiene mayor impacto, entonces en promedio, recibir este tratamiento aumenta en 68.8 ms el intervalo QT (Tabla \ref{tab:m1t1} ).
+
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{1.2} % aumenta espacio entre filas
+	\setlength{\tabcolsep}{5pt}       % ajusta espacio entre columnas
+	\small                             % reduce tamaño de fuente
+	\centering
+	\caption{Resumen: Estimación de parámetros - Modelo 1}
+	\begin{tabularx}{\textwidth}{l
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			p{1.3cm}
+			p{0.9cm}}
+		\toprule
+		\textbf{Parámetro} & \textbf{media} & \textbf{sd} & \textbf{hdi 3\%} & \textbf{hdi 97\%} & \textbf{mcse\newline mean} & \textbf{mcse\newline sd} & \textbf{ess\newline bulk} & \textbf{ess tail} & \textbf{r\_hat} \\
+		\midrule
+		mu\_beta       & 28.45  & 10.26 & 8.73   & 46.77  & 0.31 & 0.15 & 1094.12 & 2042.54 & 1.0 \\
+		beta\_treat[0] & 59.84  & 13.79 & 33.75  & 85.44  & 0.50 & 0.32 & 750.62  & 1159.59 & 1.0 \\
+		beta\_treat[1] & 23.28  & 13.75 & -1.45  & 49.88  & 0.50 & 0.32 & 745.29  & 1155.81 & 1.0 \\
+		beta\_treat[2] & 68.80  & 13.79 & 43.06  & 94.49  & 0.51 & 0.32 & 745.90  & 1149.70 & 1.0 \\
+		beta\_treat[3] & 31.47  & 13.77 & 5.78   & 57.60  & 0.51 & 0.32 & 743.86  & 1135.36 & 1.0 \\
+		beta\_treat[4] & 26.07  & 13.76 & 0.53   & 52.15  & 0.50 & 0.32 & 746.04  & 1146.00 & 1.0 \\
+		mu\_gamma      & 28.60  & 9.88  & 10.77  & 47.56  & 0.15 & 0.15 & 4141.89 & 2927.73 & 1.0 \\
+		gamma\_sex[0]  & 327.73 & 14.95 & 300.63 & 356.78 & 0.53 & 0.35 & 794.06  & 1118.70 & 1.0 \\
+		gamma\_sex[1]  & 317.34 & 15.05 & 290.53 & 347.38 & 0.53 & 0.35 & 800.46  & 1139.30 & 1.0 \\
+		theta\_age     & 0.97   & 0.07  & 0.85   & 1.09   & 0.00 & 0.00 & 3664.71 & 2802.99 & 1.0 \\
+		theta\_RR      & 0.12   & 0.00  & 0.12   & 0.13   & 0.00 & 0.00 & 3508.01 & 2857.64 & 1.0 \\
+		theta\_sysbp   & -0.99  & 0.04  & -1.07  & -0.91  & 0.00 & 0.00 & 2990.64 & 2638.33 & 1.0 \\
+		sigma          & 22.53  & 0.24  & 22.09  & 22.98  & 0.00 & 0.00 & 3926.53 & 3159.65 & 1.0 \\
+		sigma\_beta    & 15.07  & 2.97  & 10.15  & 20.87  & 0.06 & 0.05 & 2302.25 & 2420.93 & 1.0 \\
+		sigma\_gamma   & 45.48  & 2.87  & 39.93  & 50.64  & 0.06 & 0.04 & 2452.96 & 3014.48 & 1.0 \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:m1t1}
+\end{table}
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalos de Credibilidad-Modelo 1}
+	\includegraphics[width=0.9\textwidth]{output_1_13.png}
+	\label{fig:m1f1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalos de Credibilidad-ROPE-Modelo 1}
+	\includegraphics[width=0.9\textwidth]{output_2_1.png}
+	\label{fig:m1f1.1}
+\end{figure}
+
+\subsection{Modelo 2 (\ref{ec:42})}
+
+De la tabla \ref{tab:m2t1} podemos concluir que existe convergencia. La figura \ref{fig:m2f2} se puede concluir que se mantiene la no relevancia de el intervalo RR y de la presión sistólica. La figura \ref{fig:m2f2} el intervalo RR, $100\%$ está dentro del ROPE, mientras que pese a que el HDI de la presión sistólica es diferente de cero, el $81.7\%$ de la distribución esta dentro del ROPE indicando claramente una irrelevancia clínica.  Respecto a los tratamientos, Dofetilida, Quinidina, Ranolazina y Verapamilo presentan efectos significativamente positivos, en contraste con el placebo, cuyo efecto es nulo. Dado que el tratamiento con Quinidina es el que tiene mayor impacto, entonces en promedio, recibir este tratamiento aumenta en 67.11 ms el intervalo QT (Tabla \ref{tab:m2t1} ).
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{1.2}
+	\setlength{\tabcolsep}{4pt}
+	\scriptsize
+	\centering
+	\caption{Resumen: Estimación de parámetros-Modelo 2}
+	\begin{tabularx}{\textwidth}{l
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			p{1.2cm}
+			p{0.8cm}}
+		\toprule
+		\textbf{Parámetro} & \textbf{media} & \textbf{sd} & \textbf{hdi 3\%} & \textbf{hdi 97\%} & \textbf{mcse\newline mean} & \textbf{mcse\newline sd} & \textbf{ess\newline bulk} & \textbf{ess tail} & \textbf{r\_hat} \\
+		\midrule
+		mu\_beta                  & 28.29  & 9.75  & 9.39   & 45.72  & 0.28 & 0.15 & 1243.55 & 2079.43 & 1.00 \\
+		beta\_tratamiento[0]      & 58.53  & 12.96 & 34.05  & 81.83  & 0.47 & 0.36 & 779.31  & 1016.25 & 1.01 \\
+		beta\_tratamiento[1]      & 23.67  & 12.94 & -0.64  & 47.31  & 0.47 & 0.36 & 779.35  & 1038.38 & 1.01 \\
+		beta\_tratamiento[2]      & 67.11  & 12.96 & 42.16  & 90.09  & 0.47 & 0.36 & 779.60  & 1041.36 & 1.01 \\
+		beta\_tratamiento[3]      & 31.19  & 12.95 & 7.70   & 54.85  & 0.47 & 0.36 & 781.70  & 1090.55 & 1.01 \\
+		beta\_tratamiento[4]      & 25.92  & 12.97 & 1.47   & 48.96  & 0.47 & 0.36 & 782.99  & 1026.52 & 1.01 \\
+		mu\_gamma                 & 28.78  & 10.11 & 8.84   & 46.18  & 0.15 & 0.16 & 4358.82 & 2984.81 & 1.00 \\
+		gamma\_sexo[0]            & 322.04 & 14.11 & 295.90 & 347.71 & 0.50 & 0.35 & 820.37  & 1101.65 & 1.01 \\
+		gamma\_sexo[1]            & 311.82 & 14.22 & 285.99 & 338.10 & 0.50 & 0.35 & 825.43  & 1164.78 & 1.01 \\
+		theta\_edad               & 0.99   & 0.06  & 0.86   & 1.10   & 0.00 & 0.00 & 4063.19 & 2737.61 & 1.00 \\
+		theta\_RR                 & 0.12   & 0.00  & 0.12   & 0.13   & 0.00 & 0.00 & 4430.36 & 2969.45 & 1.00 \\
+		theta\_presion\_sistolica & -0.96  & 0.04  & -1.04  & -0.88  & 0.00 & 0.00 & 4213.14 & 3170.52 & 1.00 \\
+		theta\_asimetria\_onda\_T & 8.05   & 0.90  & 6.33   & 9.65   & 0.01 & 0.01 & 3955.62 & 2868.32 & 1.00 \\
+		sigma                     & 22.21  & 0.24  & 21.76  & 22.67  & 0.00 & 0.00 & 4259.33 & 3027.38 & 1.00 \\
+		sigma\_beta               & 14.78  & 2.91  & 9.73   & 20.12  & 0.06 & 0.05 & 2327.04 & 2059.04 & 1.00 \\
+		sigma\_gamma              & 45.04  & 2.88  & 39.77  & 50.70  & 0.06 & 0.05 & 2212.26 & 2445.68 & 1.00 \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:m2t1}
+\end{table}
+
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalos de Credibilidad-Modelo 2}
+	\includegraphics[width=0.9\textwidth]{output_4_13.png}
+	\label{fig:m2f1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalos de Credibilidad-ROPE-Modelo 2}
+	\includegraphics[width=0.9\textwidth]{output_5_1.png}
+	\label{fig:m2f1.1}
+\end{figure}
+
+
+\subsection{Modelo 3 (\ref{ec:43})}
+
+De la tabla \ref{tab:m3t1} podemos concluir que existe convergencia. La figura \ref{fig:m3f2} se puede concluir la no relevancia de el intervalo RR, la presión sistólica y el intervalo $JT$. La figura \ref{fig:m3f2} el intervalo JT tiene una media positiva pero completamente dentro del ROPE.  Para este modelo todos los tratamientos son significativos, pero el tratamiento con Quinidina es el que tiene mayor impacto, entonces en promedio, recibir este tratamiento aumenta en 55.41 ms el intervalo QT (Tabla \ref{tab:m3t1} ).
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{1.2}
+	\setlength{\tabcolsep}{4pt}
+	\scriptsize
+	\centering
+	\caption{Resumen: Estimación de parámetros-Modelo 3}
+	\begin{tabularx}{\textwidth}{l
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			p{1.3cm}
+			p{0.9cm}}
+		\toprule
+		\textbf{Parámetro} & \textbf{media} & \textbf{sd} & \textbf{hdi 3\%} & \textbf{hdi 97\%} & \textbf{mcse\newline mean} & \textbf{mcse\newline sd} & \textbf{ess\newline bulk} & \textbf{ess tail} & \textbf{r\_hat} \\
+		\midrule
+		mu\_beta                  & 28.72  & 10.16 & 9.70   & 48.01  & 0.32 & 0.21 & 989.85  & 1374.21 & 1.00 \\
+		beta\_tratamiento[0]      & 45.83  & 12.02 & 23.99  & 69.56  & 0.43 & 0.28 & 765.76  & 1140.96 & 1.00 \\
+		beta\_tratamiento[1]      & 25.19  & 12.04 & 0.98   & 46.71  & 0.44 & 0.28 & 765.05  & 1139.36 & 1.00 \\
+		beta\_tratamiento[2]      & 55.41  & 12.05 & 32.47  & 77.98  & 0.44 & 0.28 & 763.09  & 1105.89 & 1.00 \\
+		beta\_tratamiento[3]      & 30.47  & 12.03 & 7.05   & 52.77  & 0.44 & 0.28 & 766.14  & 1144.46 & 1.00 \\
+		beta\_tratamiento[4]      & 26.43  & 12.01 & 4.20   & 49.70  & 0.44 & 0.28 & 762.09  & 1204.74 & 1.00 \\
+		mu\_gamma                 & 28.98  & 10.02 & 9.27   & 47.19  & 0.17 & 0.14 & 3649.86 & 2570.08 & 1.00 \\
+		gamma\_sexo[0]            & 206.87 & 13.10 & 183.26 & 232.40 & 0.46 & 0.29 & 824.03  & 1296.43 & 1.00 \\
+		gamma\_sexo[1]            & 217.13 & 13.09 & 192.36 & 241.62 & 0.46 & 0.29 & 822.19  & 1231.96 & 1.00 \\
+		theta\_edad               & 0.12   & 0.06  & 0.03   & 0.24   & 0.00 & 0.00 & 3256.52 & 2895.06 & 1.00 \\
+		theta\_RR                 & 0.02   & 0.00  & 0.02   & 0.03   & 0.00 & 0.00 & 2351.65 & 2467.13 & 1.00 \\
+		theta\_presion\_sistolica & -0.29  & 0.04  & -0.36  & -0.22  & 0.00 & 0.00 & 2740.40 & 2683.11 & 1.00 \\
+		theta\_asimetria\_onda\_T & 7.35   & 0.88  & 5.75   & 8.99   & 0.01 & 0.01 & 4453.94 & 2725.00 & 1.00 \\
+		theta\_JT                 & 0.71   & 0.02  & 0.68   & 0.74   & 0.00 & 0.00 & 2085.08 & 2423.48 & 1.00 \\
+		sigma                     & 18.26  & 0.20  & 17.89  & 18.66  & 0.00 & 0.00 & 4112.91 & 3033.18 & 1.00 \\
+		sigma\_beta               & 11.44  & 2.70  & 7.10   & 16.61  & 0.05 & 0.05 & 3103.33 & 2574.79 & 1.00 \\
+		sigma\_gamma              & 35.84  & 2.94  & 30.13  & 41.30  & 0.06 & 0.04 & 2034.38 & 2329.18 & 1.00 \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:m3t1}
+\end{table}
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalos de Credibilidad-Modelo 3}
+	\includegraphics[width=0.9\textwidth]{output_7_13.png}
+	\label{fig:m3f1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalos de Credibilidad-ROPE-Modelo 3}
+	\includegraphics[width=0.9\textwidth]{output_8_1.png}
+	\label{fig:m3f1.1}
+\end{figure}
+
+
+
+\subsection{Modelo 4 (\ref{ec:44})}
+
+De la tabla \ref{tab:m4t1} podemos concluir que existe convergencia. La figura \ref{fig:m4f2} y la figura \ref{fig:m4f2} nos ayudan a concluir que el tratamiento con Ranolazina incluye el cero en intervalo y que la edad, el intervalo RR, la presión sistólica, el intervalo JT y la dosis tiene el $100\%$ en ROPE, por lo que se puede concluir que son clínicamente irrelevante. 
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{1.2}
+	\setlength{\tabcolsep}{4pt}
+	\scriptsize
+	\centering
+	\caption{Resumen: Estimación de parámetros-Modelo 4}
+	\begin{tabularx}{\textwidth}{l
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			p{1.3cm}
+			p{0.9cm}}
+		\toprule
+		\textbf{Parámetro} & \textbf{media} & \textbf{sd} & \textbf{hdi 3\%} & \textbf{hdi 97\%} & \textbf{mcse\newline mean} & \textbf{mcse\newline sd} & \textbf{ess\newline bulk} & \textbf{ess tail} & \textbf{r\_hat} \\
+		\midrule
+		mu\_beta                  & 27.53  & 10.14 & 8.77   & 46.38  & 0.19 & 0.16 & 2719.76 & 2743.05 & 1.00 \\
+		beta\_tratamiento[0]      & 112.87 & 24.47 & 58.78  & 151.04 & 1.18 & 0.83 & 534.55  & 596.57  & 1.00 \\
+		beta\_tratamiento[1]      & 71.50  & 20.67 & 30.53  & 108.09 & 0.86 & 0.51 & 651.24  & 738.66  & 1.00 \\
+		beta\_tratamiento[2]      & 138.12 & 28.05 & 75.62  & 178.72 & 1.43 & 1.07 & 495.24  & 592.19  & 1.00 \\
+		beta\_tratamiento[3]      & -58.70 & 39.37 & -128.36 & 18.01 & 1.49 & 0.75 & 702.63  & 1141.63 & 1.01 \\
+		beta\_tratamiento[4]      & 152.75 & 39.75 & 65.70  & 205.52 & 2.12 & 1.66 & 457.55  & 664.79  & 1.01 \\
+		mu\_gamma                 & 27.56  & 10.20 & 9.42   & 48.17  & 0.17 & 0.16 & 3509.65 & 2520.21 & 1.00 \\
+		gamma\_sexo[0]            & 62.08  & 44.99 & 2.82   & 159.81 & 2.40 & 1.92 & 458.93  & 647.47  & 1.01 \\
+		gamma\_sexo[1]            & 72.28  & 45.03 & 13.56  & 170.43 & 2.41 & 1.92 & 456.96  & 648.92  & 1.01 \\
+		theta\_edad               & 0.12   & 0.06  & 0.01   & 0.23   & 0.00 & 0.00 & 3442.01 & 2597.60 & 1.00 \\
+		theta\_RR                 & 0.02   & 0.00  & 0.02   & 0.03   & 0.00 & 0.00 & 2629.17 & 2696.01 & 1.00 \\
+		theta\_presion\_sistolica & -0.30  & 0.04  & -0.37  & -0.23  & 0.00 & 0.00 & 3193.26 & 2774.20 & 1.00 \\
+		theta\_asimetria\_onda\_T & 7.32   & 0.87  & 5.63   & 8.89   & 0.01 & 0.01 & 3380.49 & 2600.78 & 1.00 \\
+		theta\_JT                 & 0.70   & 0.02  & 0.68   & 0.73   & 0.00 & 0.00 & 2321.04 & 2815.56 & 1.00 \\
+		theta\_dosis              & 0.16   & 0.05  & 0.05   & 0.24   & 0.00 & 0.00 & 470.19  & 623.44  & 1.01 \\
+		sigma                     & 18.26  & 0.20  & 17.85  & 18.61  & 0.00 & 0.00 & 3984.36 & 2858.83 & 1.00 \\
+		sigma\_beta               & 31.52  & 5.99  & 19.05  & 41.11  & 0.30 & 0.25 & 506.02  & 618.40  & 1.01 \\
+		sigma\_gamma              & 14.78  & 8.50  & 3.33   & 31.52  & 0.43 & 0.25 & 479.23  & 751.48  & 1.01 \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:m4t1}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalos de Credibilidad-Modelo 4}
+	\includegraphics[width=0.9\textwidth]{output_10_13.png}
+	\label{fig:m4f1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalos de Credibilidad-ROPE-Modelo 4}
+	\includegraphics[width=0.9\textwidth]{output_11_1.png}
+	\label{fig:m4f1.1}
+\end{figure}
+
+
+
+
+\subsection{Modelo 5 (\ref{ec:45})}
+
+De la tabla \ref{tab:m5t1} podemos concluir que existe convergencia. De la figura \ref{fig:m5f2} y la figura \ref{fig:m5f2} se concluye que el tratamiento con Ranolazina incluye el cero en intervalo y que la edad, el intervalo RR, la presión sistólica, el intervalo JT, la dosis y la presión diastolica tiene el $100\%$ en ROPE, por lo que se puede concluir que son clínicamente irrelevante. 
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{1.2}
+	\setlength{\tabcolsep}{4pt}
+	\scriptsize
+	\centering
+	\caption{Resumen: Estimación de parámetros-Modelo 5}
+	\begin{tabularx}{\textwidth}{l
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			p{1.3cm}
+			p{0.9cm}}
+		\toprule
+		\textbf{Parámetro} & \textbf{media} & \textbf{sd} & \textbf{hdi 3\%} & \textbf{hdi 97\%} & \textbf{mcse\newline mean} & \textbf{mcse\newline sd} & \textbf{ess\newline bulk} & \textbf{ess tail} & \textbf{r\_hat} \\
+		\midrule
+		mu\_beta                  & 27.42  & 10.01 & 7.45   & 44.90  & 0.18 & 0.14 & 3211.90 & 3035.55 & 1.00 \\
+		beta\_tratamiento[0]      & 115.02 & 23.49 & 64.40  & 154.13 & 0.99 & 0.92 & 760.81  & 623.32  & 1.01 \\
+		beta\_tratamiento[1]      & 72.86  & 20.37 & 31.98  & 109.62 & 0.73 & 0.55 & 880.57  & 751.16  & 1.01 \\
+		beta\_tratamiento[2]      & 140.73 & 26.63 & 80.25  & 180.53 & 1.22 & 1.17 & 721.90  & 586.68  & 1.01 \\
+		beta\_tratamiento[3]      & -61.98 & 38.99 & -132.66 & 12.75 & 1.31 & 0.69 & 886.25  & 1300.45 & 1.01 \\
+		beta\_tratamiento[4]      & 156.90 & 37.28 & 72.72  & 206.39 & 1.85 & 1.80 & 671.75  & 580.17  & 1.01 \\
+		mu\_gamma                 & 27.38  & 9.91  & 9.09   & 45.75  & 0.16 & 0.16 & 3722.98 & 2626.73 & 1.00 \\
+		gamma\_sexo[0]            & 56.81  & 42.07 & 2.03   & 152.71 & 2.12 & 2.07 & 604.93  & 589.08  & 1.01 \\
+		gamma\_sexo[1]            & 66.45  & 42.09 & 13.00  & 163.50 & 2.13 & 2.06 & 612.23  & 589.08  & 1.01 \\
+		theta\_edad               & 0.15   & 0.06  & 0.04   & 0.26   & 0.00 & 0.00 & 3231.63 & 2986.82 & 1.00 \\
+		theta\_RR                 & 0.02   & 0.00  & 0.02   & 0.03   & 0.00 & 0.00 & 3010.74 & 2876.03 & 1.00 \\
+		theta\_presion\_sistolica & -0.23  & 0.06  & -0.35  & -0.11  & 0.00 & 0.00 & 2523.71 & 2714.70 & 1.00 \\
+		theta\_presion\_diastolica & -0.10 & 0.08  & -0.26  & 0.04   & 0.00 & 0.00 & 2381.82 & 2878.44 & 1.00 \\
+		theta\_asimetria\_onda\_T & 7.37   & 0.88  & 5.70   & 9.01   & 0.01 & 0.01 & 3948.55 & 2886.09 & 1.00 \\
+		theta\_JT                 & 0.70   & 0.02  & 0.67   & 0.73   & 0.00 & 0.00 & 2860.56 & 3051.80 & 1.00 \\
+		theta\_dosis              & 0.16   & 0.05  & 0.06   & 0.25   & 0.00 & 0.00 & 622.18  & 558.49  & 1.01 \\
+		sigma                     & 18.26  & 0.21  & 17.87  & 18.65  & 0.00 & 0.00 & 3981.59 & 2826.07 & 1.00 \\
+		sigma\_beta               & 32.14  & 5.68  & 19.99  & 41.02  & 0.26 & 0.25 & 654.62  & 610.83  & 1.01 \\
+		sigma\_gamma              & 13.64  & 8.09  & 2.64   & 29.97  & 0.37 & 0.27 & 667.41  & 704.58  & 1.01 \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:m5t1}
+\end{table}
+
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalos de Credibilidad-Modelo 5}
+	\includegraphics[width=0.9\textwidth]{output_13_13.png}
+	\label{fig:m5f1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Intervalos de Credibilidad-ROPE-Modelo 5}
+	\includegraphics[width=0.9\textwidth]{output_14_1.png}
+	\label{fig:m5f1.1}
+\end{figure}
+
+
+
+
+\section{Evaluación de los modelos}
+\subsection{Modelo 1 (\ref{ec:41})}
+
+La figura \ref{fig:m1f2} y la figura \ref{fig:m1f3} muestra una convergencia adecuada de las cadenas, complementando lo afirmado en la sección anterior con la métrica $r_hat$ de que existe una estabilidad en los estimadores. En cuanto al diagnóstico de la energía, la figura \ref{fig:m1f4} presenta valores superiores a 0.3 de BFMI, lo que asegura que el muestreo exploro eficientemente el espacio de parámetros. Para el desempeño predictivo (Tabla \ref{tab:m1t2}), se tiene un RMSE y un MAE en el entrenamiento y prueba que muestran generalización y estabilidad del modelo. El coeficiente de determinación bayesiana indica un $63\%$ de variabilidad en entrenamiento y prueba lo cual resulta aceptable dada las características fluctuantes que contempla el modelo. 
+
+\begin{figure}[H]
+	\centering
+	\caption{Convergencia-Modelo 1}
+	\includegraphics[width=0.67\textwidth]{output_1_14.png}
+	\label{fig:m1f2}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Convergencia-Tratamientos-Modelo 1}
+	\includegraphics[width=0.7\textwidth]{output_1_15.png}
+	\label{fig:m1f3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Energía-BFMI-Modelo 1}
+	\includegraphics[width=0.7\textwidth]{output_1_16.png}
+	\label{fig:m1f4}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Métricas de desempeño - Modelo 1}
+	\renewcommand{\arraystretch}{1.2}
+	\small
+	\begin{tabularx}{0.85\textwidth}{l*{2}{>{\centering\arraybackslash}X}}
+		\toprule
+		\textbf{Métrica} & \textbf{Entrenamiento} & \textbf{Prueba} \\
+		\midrule
+		RMSE            & 18.24                   & 18.01 \\
+		MAE             & 13.03                   & 12.90 \\
+		R\textsuperscript{2} Bayesiano & $0.630 \pm 0.006$         & $-$ \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:m1t2}
+\end{table}
+
+
+
+\subsection{Modelo 2 (\ref{ec:42})}
+
+La figura \ref{fig:m2f2} y la figura \ref{fig:m2f3} indican una convergencia adecuada de las cadenas, complementando lo afirmado en la sección anterior con la métrica $r_hat$ de que existe una estabilidad en los estimadores. En cuanto al diagnóstico de la energía, la figura \ref{fig:m2f4} presenta valores superiores a 0.3 de BFMI, lo que asegura que el muestreo exploro eficientemente el espacio de parámetros. Para el desempeño predictivo (Tabla \ref{tab:m2t2}), se tiene un RMSE y un MAE superiores al modelo \ref{ec:41} en el entrenamiento y prueba, pero aún se mantiene la estabilidad del modelo. El coeficiente de determinación bayesiana indica un $53\%$ de variabilidad en entrenamiento y $54\%$ en prueba siendo menor al modelo \ref{ec:41}. 
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Convergencia-Modelo 2}
+	\includegraphics[width=0.67\textwidth]{output_4_14.png}
+	\label{fig:m2f2}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Convergencia-Tratamientos-Modelo 2}
+	\includegraphics[width=0.7\textwidth]{output_4_15.png}
+	\label{fig:m2f3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Energía-BFMI-Modelo 2}
+	\includegraphics[width=0.7\textwidth]{output_4_16.png}
+	\label{fig:m2f4}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Métricas de desempeño-Modelo 2}
+	\renewcommand{\arraystretch}{1.2}
+	\small
+	\begin{tabularx}{0.85\textwidth}{l*{2}{>{\centering\arraybackslash}X}}
+		\toprule
+		\textbf{Métrica} & \textbf{Entrenamiento} & \textbf{Prueba} \\
+		\midrule
+		RMSE            & 22.21                   & 21.66 \\
+		MAE             & 16.34                   & 15.96 \\
+		R\textsuperscript{2} Bayesiano & $0.532 \pm 0.007$         & $-$ \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:m2t2}
+\end{table}
+
+
+
+\subsection{Modelo 3 (\ref{ec:43})}
+
+La figura \ref{fig:m3f2} y la figura \ref{fig:m3f3}indican una convergencia adecuada de las cadenas, complementando lo afirmado en la sección anterior con la métrica $r_hat$ de que existe una estabilidad en los estimadores. En cuanto al diagnóstico de la energía, la figura \ref{fig:m3f4} presenta valores superiores a 0.3 de BFMI, lo que asegura que el muestreo exploro eficientemente el espacio de parámetros. Para el desempeño predictivo (Tabla \ref{tab:m3t2}), se tiene un RMSE y un MAE inferiores al modelo \ref{ec:42} en el entrenamiento y prueba, pero aún se mantiene la estabilidad del modelo. El coeficiente de determinación bayesiana indica un $63\%$ de variabilidad en entrenamiento y prueba recuperando su capacidad de explicación de variabilidad respecto al modelo \ref{ec:42}. 
+
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Convergencia-Modelo 3}
+	\includegraphics[width=0.67\textwidth]{output_7_14.png}
+	\label{fig:m3f2}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Convergencia-Tratamientos-Modelo 3}
+	\includegraphics[width=0.7\textwidth]{output_7_15.png}
+	\label{fig:m3f3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Energía-BFMI-Modelo 3}
+	\includegraphics[width=0.7\textwidth]{output_7_16.png}
+	\label{fig:m3f4}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Métricas de desempeño-Modelo 3}
+	\renewcommand{\arraystretch}{1.2}
+	\small
+	\begin{tabularx}{0.85\textwidth}{l*{2}{>{\centering\arraybackslash}X}}
+		\toprule
+		\textbf{Métrica} & \textbf{Entrenamiento} & \textbf{Prueba} \\
+		\midrule
+		RMSE            & 18.24                   & 18.02 \\
+		MAE             & 13.04                   & 12.91 \\
+		R\textsuperscript{2} Bayesiano & $0.630 \pm 0.006$         & $-$ \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:m3t2}
+\end{table}
+
+
+\subsection{Modelo 4 (\ref{ec:44})}
+
+La figura \ref{fig:m4f2} y la figura \ref{fig:m4f3}indican una convergencia adecuada de las cadenas, complementando lo afirmado en la sección anterior con la métrica $r_hat$ de que existe una estabilidad en los estimadores. En cuanto al diagnóstico de la energía, la figura \ref{fig:m4f4} presenta valores superiores a 0.3 de BFMI, lo que asegura que el muestreo exploro eficientemente el espacio de parámetros. Para el desempeño predictivo (Tabla \ref{tab:m3t2}), no se presentan cambios considerables en relación al modelo \ref{ec:43}. 
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Convergencia-Modelo 4}
+	\includegraphics[width=0.67\textwidth]{output_10_14.png}
+	\label{fig:m4f2}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Convergencia-Tratamientos-Modelo 4}
+	\includegraphics[width=0.7\textwidth]{output_10_15.png}
+	\label{fig:m4f3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Energía-BFMI-Modelo 4}
+	\includegraphics[width=0.7\textwidth]{output_10_16.png}
+	\label{fig:m4f4}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Métricas de desempeño-Modelo 4}
+	\renewcommand{\arraystretch}{1.2}
+	\small
+	\begin{tabularx}{0.85\textwidth}{l*{2}{>{\centering\arraybackslash}X}}
+		\toprule
+		\textbf{Métrica} & \textbf{Entrenamiento} & \textbf{Prueba} \\
+		\midrule
+		RMSE            & 18.24                   & 18.02 \\
+		MAE             & 13.05                   & 12.92 \\
+		R\textsuperscript{2} Bayesiano & $0.630 \pm 0.006$         & $-$ \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:m4t2}
+\end{table}
+
+
+\subsection{Modelo 5 (\ref{ec:45})}
+
+La figura \ref{fig:m5f2} y la figura \ref{fig:m5f3}indican una convergencia adecuada de las cadenas, complementando lo afirmado en la sección anterior con la métrica $r_hat$ de que existe una estabilidad en los estimadores. En cuanto al diagnostico de la energía, la figura \ref{fig:m5f4} presenta valores superiores a 0.3 de BFMI, lo que asegura que el muestreo exploro eficientemente el espacio de parámetros. Para el desempeño predictivo (Tabla \ref{tab:m5t2}), no se presentan cambios considerables en relación al modelo \ref{ec:44}. 
+
+\begin{figure}[H]
+	\centering
+	\caption{Convergencia-Modelo 5}
+	\includegraphics[width=0.67\textwidth]{output_13_14.png}
+	\label{fig:m5f2}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Convergencia-Tratamientos-Modelo 5}
+	\includegraphics[width=0.7\textwidth]{output_13_15.png}
+	\label{fig:m5f3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Energía-BFMI-Modelo 5}
+	\includegraphics[width=0.7\textwidth]{output_13_16.png}
+	\label{fig:m5f4}
+\end{figure}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Métricas de desempeño-Modelo 5}
+	\renewcommand{\arraystretch}{1.2}
+	\small
+	\begin{tabularx}{0.85\textwidth}{l*{2}{>{\centering\arraybackslash}X}}
+		\toprule
+		\textbf{Métrica} & \textbf{Entrenamiento} & \textbf{Prueba} \\
+		\midrule
+		RMSE            & 18.24                   & 18.01 \\
+		MAE             & 13.03                   & 12.90 \\
+		R\textsuperscript{2} Bayesiano & $0.630 \pm 0.006$         & $-$ \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:m5t2}
+\end{table}
+
+
+Puesto que la finalidad es tener predicciones robustas, analizaremos la capacidad predictiva mediante el WAIC, cuanto menos negativa es la métrica $elpd_waic$, mejor es el modelo. La tabla \ref{tab:waic_modelos} muestra dicha métrica mencionada, así podemos concluir que el modelo 3 (\ref{ec:43}) es el de mejor capacidad predictiva.
+
+\begin{table}[H]
+	\centering
+	\caption{Comparación de modelos mediante WAIC}
+	\renewcommand{\arraystretch}{1.2}
+	\small
+	\begin{tabularx}{0.75\textwidth}{l
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X
+			>{\centering\arraybackslash}X}
+		\toprule
+		\textbf{Modelo} & \textbf{elpd\_waic} & \textbf{SE} & \textbf{p\_waic} \\
+		\midrule
+		Modelo 1 & $-18937.64$ & 66.90 & 11.06 \\
+		Modelo 2 & $-18922.15$ & 68.36 & 11.62 \\
+		Modelo 3 & $-18103.28$ & 94.36 & 17.13 \\
+		Modelo 4 & $-18103.50$ & 94.25 & 17.11 \\
+		Modelo 5 & $-18103.64$ & 94.34 & 18.39 \\
+		\bottomrule
+	\end{tabularx}
+	\label{tab:waic_modelos}
+\end{table}
+
+\section{Aplicativo}
+
+A partir de la tabla \ref{tab:waic_modelos}, podemos concluir que el mejor modelo predictivo es el Modelo 3 (\ref{ec:43}). Así, se ha construido un aplicativo en Shiny que permite al personal médico apoyarse en la toma de decisiones.
+
+\begin{figure}[H]
+	\centering
+	\caption{Aplicativo}
+	\includegraphics[width=1.12\textwidth]{app.png}
+	\label{fig:app}
+\end{figure}
+	
+	\chapter{Conclusiones y Recomendaciones}
+	El planteamiento de un modelo base resulta de mucha ayuda para obtener un primer conocimiento del problema. No obstante, observamos que no siempre el aumento de variables será la solución. El enfoque bayesiano demanda ir más allá de incrementar variables para mejorar un modelo; implica plantear de la mejor manera las distribuciones a priori, apoyándose en la literatura, el conocimiento de expertos, entre otros.
+	
+En cuanto a la estimación de los parámetros, se obtuvieron métricas favorables que dejan ver que la implementación computacional se realizó correctamente. Y sí, eso se reflejó en la práctica: se lograron estimadores que convergen, aunque no necesariamente terminaron siendo parámetros significativos. Cabe recalcar que esto fue posible gracias al uso del supercomputador, que literalmente permitió trabajar con un alto número de simulaciones y, con ello, hacer mucho más viable (y estable) esa convergencia.
+	
+	El uso de métricas para la evaluación de un modelo es una herramienta básica, pero debe manejarse con cuidado, dependiendo del propósito para el cual ha sido planteado. En este caso, notamos que resultan de gran utilidad el coeficiente de determinación bayesiano, así como el WAIC, que en conjunto permiten tomar la decisión de cuál modelo es el más adecuado (modelo 3 \ref{ec:43}) para el objetivo de predicción del intervalo QT. 
+	
+	Es importante recordar que la validación de un modelo no debe limitarse únicamente al análisis analítico, sino que también debe considerar el sustento teórico y clínico. En este sentido, se concluye que los Modelos 4 y 5 generan estimaciones de los parámetros de tratamiento que resultan clínicamente alarmantes, en cuanto a la prolongación del intervalo QT. Estos modelos evidencian efectos significativos que podrían perjudicar la repolarización cardíaca.
+	
+	Se ha podido determinar que los efectos de los fármacos también dependen de ciertas características clínicas y de algunas características electrocardiográficas comunes. De esta manera, el aplicativo desarrollado será de utilidad para el personal médico, facilitando la toma de decisiones orientadas al control preciso del intervalo QT, evitando complicaciones cardiovasculares y reduciendo la mortalidad asociada a alteraciones en la repolarización ventricular.
+	
+	\newpage
+	
+\printbibliography	
+	
+		\chapter*{ANEXOS}
+\begin{lstlisting}
+# ---------------------------------------
+# 0. IMPORTACION DE LIBRERIAS
+# ---------------------------------------
+import pymc as pm
+import pandas as pd
+import numpy as np
+import arviz as az
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, mean_absolute_error
+from sklearn.preprocessing import StandardScaler
+
+# ---------------------------------------
+# 1. PREPARACION Y DIVISION DE DATOS
+# ---------------------------------------
+data = pd.read_csv('/home/daniel.freire__uce.edu.ec/Documents/SCR-002.Clinical.Data.csv')
+data = data.rename(columns={
+	'QT': 'QT',
+	'EXTRT': 'tratamiento',
+	'SEX': 'sexo',
+	'AGE': 'edad',
+	'RR': 'RR',
+	'SYSBP': 'presion_sistolica',
+	'presion_diastolica': 'presion_diastolica',
+	'asimetria_onda_T': 'asimetria_onda_T',
+	'JT': 'JT',
+	'dosis': 'dosis'
+})
+
+variables_modelo = ['QT', 'tratamiento', 'sexo', 'edad', 'RR', 'presion_sistolica']
+data = data[variables_modelo].dropna().reset_index(drop=True)
+
+# Imputacion de datos faltantes
+for col in data.select_dtypes(include=['float64', 'int64']).columns:
+data[col] = data[col].fillna(data[col].mean())
+
+for col in data.select_dtypes(include=['object', 'category']).columns:
+data[col] = data[col].fillna(data[col].mode()[0])
+
+# Codificacion
+data['tratamiento_code'] = data['tratamiento'].astype('category').cat.codes
+data['sexo_code'] = data['sexo'].astype('category').cat.codes
+treat_labels = data['tratamiento'].astype('category').cat.categories.tolist()
+sexo_labels = data['sexo'].astype('category').cat.categories.tolist()
+
+train_data, test_data = train_test_split(data, test_size=0.2, random_state=42)
+n_treat = len(treat_labels)
+n_sexo = len(sexo_labels)
+
+# ---------------------------------------
+# 2. MODELO BAYESIANO 
+# ---------------------------------------
+with pm.Model() as hierarchical_model_no_interactions:
+# Priors
+sigma = pm.HalfNormal("sigma", sigma=10)
+
+mu_beta = pm.Normal("mu_beta", mu=0, sigma=10)
+sigma_beta = pm.HalfNormal("sigma_beta", sigma=5)
+beta_tratamiento = pm.Normal("beta_tratamiento", mu=mu_beta, sigma=sigma_beta, shape=n_treat)
+
+mu_gamma = pm.Normal("mu_gamma", mu=0, sigma=10)
+sigma_gamma = pm.HalfNormal("sigma_gamma", sigma=5)
+gamma_sexo = pm.Normal("gamma_sexo", mu=mu_gamma, sigma=sigma_gamma, shape=n_sexo)
+
+# Coeficientes principales
+theta_edad = pm.Normal("theta_edad", mu=0, sigma=1)
+theta_RR = pm.Normal("theta_RR", mu=0, sigma=1)
+theta_presion_sistolica = pm.Normal("theta_presion_sistolica", mu=0, sigma=1)
+
+# Modelo lineal de entrenamiento SIN INTERACCIONES
+mu_train = (
+beta_tratamiento[train_data['tratamiento_code'].values] +
+gamma_sexo[train_data['sexo_code'].values] +
+theta_edad * train_data['edad'].values +
+theta_RR * train_data['RR'].values +
+theta_presion_sistolica * train_data['presion_sistolica'].values
+)
+
+QT_obs = pm.Normal("QT_obs", mu=mu_train, sigma=sigma, observed=train_data['QT'].values)
+
+trace_base = pm.sample(1000, tune=1000, target_accept=0.95, return_inferencedata=True, random_seed=42,idata_kwargs={"log_likelihood": True})
+
+# ---------------------------------------
+# 3. PREDICCIONES ENTRENAMIENTO 
+# ---------------------------------------
+with hierarchical_model_no_interactions:
+posterior_predictive_train = pm.sample_posterior_predictive(trace_base, var_names=["QT_obs"], random_seed=42)
+
+predicted_train = posterior_predictive_train.posterior_predictive["QT_obs"].mean(dim=["chain", "draw"]).values
+true_train = train_data["QT"].values
+
+y_pred_train = posterior_predictive_train.posterior_predictive["QT_obs"]
+y_pred_train = y_pred_train.transpose("draw", "chain", "QT_obs_dim_0").stack(samples=("draw", "chain")).values.T
+r2_train = az.r2_score(y_true=true_train, y_pred=y_pred_train)
+
+# ---------------------------------------
+# 4. PREDICCIONES TEST 
+# ---------------------------------------
+with hierarchical_model_no_interactions:
+mu_test = (
+beta_tratamiento[test_data['tratamiento_code'].values] +
+gamma_sexo[test_data['sexo_code'].values] +
+theta_edad * test_data['edad'].values +
+theta_RR * test_data['RR'].values +
+theta_presion_sistolica * test_data['presion_sistolica'].values
+)
+
+QT_test_pred = pm.Normal("QT_test_pred", mu=mu_test, sigma=sigma)
+posterior_predictive_test = pm.sample_posterior_predictive(trace_base, var_names=["QT_test_pred"], random_seed=42)
+
+predicted_test = posterior_predictive_test.posterior_predictive["QT_test_pred"].mean(dim=["chain", "draw"]).values
+true_test = test_data["QT"].values
+
+y_pred_test = posterior_predictive_test.posterior_predictive["QT_test_pred"]
+y_pred_test = y_pred_test.transpose("draw", "chain", "QT_test_pred_dim_0").stack(samples=("draw", "chain")).values.T
+r2_test = az.r2_score(y_true=true_test, y_pred=y_pred_test)
+
+# ---------------------------------------
+# 5. METRICAS 
+# ---------------------------------------
+def report_metrics(y_true, y_pred, nombre):
+rmse = np.sqrt(mean_squared_error(y_true, y_pred))
+mae = mean_absolute_error(y_true, y_pred)print(f"\n Metricas en {nombre}:")
+print(f" RMSE: {rmse:.2f}")
+print(f" MAE:  {mae:.2f}")
+
+report_metrics(true_train, predicted_train, "ENTRENAMIENTO")
+report_metrics(true_test, predicted_test, "PRUEBA")
+
+
+
+az.to_netcdf(trace_base, "/home/daniel.freire__uce.edu.ec/Documents/BayesianHRegression/trace_base.nc")
+
+az.summary(
+trace_base,
+round_to=1
+)
+
+az.plot_forest(
+trace_base,
+combined=True,
+figsize=(10, 5),
+hdi_prob=0.94
+)
+#plt.title("Efectos estimados e intervalos de credibilidad (94%)")
+plt.show()
+
+az.plot_trace(trace_base)
+#plt.suptitle("Convergencia", fontsize=14)
+plt.tight_layout()
+plt.show()
+
+az.plot_trace(trace_base, var_names=["beta_tratamiento"])
+#plt.suptitle("Efectos x tratamiento", fontsize=14)
+plt.tight_layout()
+plt.show()
+
+az.plot_energy(trace_base)
+#plt.title("Diagnostico NUTS: Energy Plot")
+plt.tight_layout()
+plt.show()
+
+az.summary(
+trace_base,
+round_to=2
+)
+\end{lstlisting}
+
+		
+
+	
+\end{document}
